@@ -109,6 +109,11 @@ address {
     font-style: normal;
 }
 
+input[type=text] {
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
 /* This used to work for parent element of button divs */
 /* But it is not enough now, below dont hide play button parent div */
 .ios video:fullscreen::-webkit-media-controls-panel {
@@ -148,7 +153,6 @@ address {
 /* image wrapper */
 .img-wrap {
     display: block;
-    margin: 0.714em 0;
 }
 
 .img-wrap img {
@@ -190,6 +194,26 @@ address {
     padding: 0 20px;
 }
 
+/* 버튼형 타이틀 */
+.title-btn a, .title-btn > span {
+    font-size: 16px;
+    font-family: "NanumBarunGothicBold", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
+}
+
+.title-btn a:after, .title-btn > span:after {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 12px;
+    margin-left: 10px;
+    background-color: transparent;
+    background-image: url(/front/images/ico/ico_arrow_right.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    -webkit-background-size: 7px 12px;
+    background-size: 7px 12px;
+}
+
 /* button */
 /* overflow 가능하게 만들기 */
 .overthrow {
@@ -200,10 +224,6 @@ address {
 /* ==============================
       공통
    ============================== */
-html, body {
-    height: 100%;
-}
-
 body {
     width: 100%;
     max-width: 480px;
@@ -214,7 +234,7 @@ body {
     font-family: "NanumBarunGothic", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
     line-height: 1.5;
     letter-spacing: 0;
-    background-color: #ebebeb;
+    background-color: #fff;
     -webkit-text-size-adjust: none;
     color: #333;
     -webkit-box-sizing: content-box;
@@ -222,32 +242,9 @@ body {
 }
 
 h2 {
-    font-size: 1.357em;
-    margin-bottom: 0.643em;
+    font-size: 16px;
     font-weight: normal;
-}
-
-h2.all {
-    margin-bottom: 0.263em;
-}
-
-h2 .cnt {
-    display: inline-block;
-    margin-left: 0.316em;
-    font-weight: normal;
-    color: #00569f;
-}
-
-h2 .cnt:before {
-    content: '(';
-}
-
-h2 .cnt:after {
-    content: ')';
-}
-
-h2.tit-17 {
-    font-size: 1.214em;
+    font-family: "NanumBarunGothicBold", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
 }
 
 select {
@@ -815,6 +812,124 @@ button.to-top {
 /* ==============================
      main
    ============================== */
+#main .event .title-btn {
+    padding: 9px 12px 6px;
+}
+
+#main .event .event-banner .swiper-pagination-fraction {
+    width: auto;
+    font-size: 10px;
+    color: #fff;
+    left: 12px;
+}
+
+#main .event .latest ul li {
+    width: 100%;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+#main .event .latest ul li:first-child {
+    border-top: 1px solid #d0d0d0;
+}
+
+#main .event .latest ul li a {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    position: relative;
+}
+
+#main .event .latest ul li a:after {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 12px;
+    background-color: transparent;
+    background-image: url(/front/images/ico/ico_arrow_right.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    -webkit-background-size: 7px 12px;
+    background-size: 7px 12px;
+    position: absolute;
+    left: auto;
+    top: 50%;
+    right: 12px;
+    bottom: auto;
+    z-index: 30;
+    margin-top: -6px;
+}
+
+#main .event .latest ul li .img-wrap {
+    display: inherit;
+    width: 96px;
+    height: 80px;
+}
+
+#main .event .latest ul li .latest-content {
+    max-width: 224px;
+    display: inherit;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    padding: 9px 19px 0 11px;
+}
+
+#main .event .latest ul li .latest-content h3 {
+    font-size: 15px;
+    font-family: "NanumBarunGothicBold", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
+    display: block;
+    white-space: nowrap;
+    line-height: 1.4;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+#main .event .latest ul li .latest-content .desc {
+    font-size: 15px;
+    font-family: "NanumBarunGothicLight", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
+    display: block;
+    white-space: nowrap;
+    line-height: 1.4;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+#main .event .latest ul li .latest-content .date {
+    font-size: 12px;
+    color: #d71921;
+}
+
+#main .introduce {
+    background-color: #000;
+    background-image: url(/front/images/temp/intoro_img_01.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-size: 320px 150px;
+    background-size: 320px 150px;
+}
+
+#main .introduce > a {
+    display: block;
+    height: 150px;
+    position: relative;
+}
+
+#main .introduce .title-btn {
+    padding: 9px 12px 6px;
+    color: #fff;
+}
+
 /**
  * Swiper 3.3.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -897,6 +1012,10 @@ button.to-top {
     pointer-events: none;
     opacity: 0;
     z-index: -1000;
+}
+
+.swiper-container img {
+    display: block;
 }
 
 .swiper-wrapper {

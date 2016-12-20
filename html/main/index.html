@@ -184,10 +184,87 @@
 			</div>
 		</div>
 		<!-- main-visual : e -->
-
+		
+		<!-- 메인 컨텐츠 : s -->
 		<div class="main-content">
 			
+			<div class="event">
+				
+				<h2 class="title-btn">
+					<a href="#"><span>KGC EVENT</span></a>
+				</h2>
+
+				<div class="event-banner">
+					<!-- Slider main container -->
+					<div class="swiper-container">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+					        <!-- Slides -->
+							<div class="swiper-slide">
+								<a href="#"><img src="/front/images/temp/main_banner_01.jpg" alt="비주얼 이미지"></a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#"><img src="/front/images/temp/main_banner_01.jpg" alt="비주얼 이미지"></a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#"><img src="/front/images/temp/main_banner_01.jpg" alt="비주얼 이미지"></a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#"><img src="/front/images/temp/main_banner_01.jpg" alt="비주얼 이미지"></a>
+							</div>
+						</div>
+						<!-- If we need pagination -->
+						<div class="swiper-pagination">
+							<!-- 자동생성 -->
+						</div>
+				
+						<!-- If we need navigation buttons -->
+						<!-- <div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div> -->
+				
+						<!-- If we need scrollbar -->
+						<!-- <div class="swiper-scrollbar"></div> -->
+					</div>
+				</div>
+
+				<div class="latest">
+					<ul>
+						<li>
+							<a href="#">
+								<span class="img-wrap">
+									<img src="/front/images/temp/event_latest_thumb_01.jpg" alt="썸네일">
+								</span>
+								<span class="latest-content">
+									<h3>동인비 샘플신청</h3>
+									<p class="desc">에센스의 힘을 다시 믿어보자</p>
+									<span class="date">2016. 12. 01 ~ 2016. 12. 31</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="img-wrap">
+									<img src="/front/images/temp/event_latest_thumb_02.jpg" alt="썸네일">
+								</span>
+								<span class="latest-content">
+									<h3>홍이장군 샘플신청</h3>
+									<p class="desc">사연과 함께 신청시 홍이장군 무료 체험분을 드립니다.</p>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="introduce">
+				<a href="#">
+					<h2 class="title-btn"><span>KGC 소개</span></h2>
+				</a>
+			</div>
+
 		</div>
+		<!-- 메인 컨텐츠 : e -->
 
 
 
@@ -197,10 +274,16 @@
 </div>
 
 <script>
+
+//메인비주얼
 ui.swiper.init('.main-visual .swiper-container', {
 	paginationClickable: false,
 	paginationType: 'bullets'
 });
+
+//이벤트 배너
+ui.swiper.init('.event-banner .swiper-container', {
+})
 </script>
 
 	
