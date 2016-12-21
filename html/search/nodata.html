@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<title>@@title</title>
+	<title>검색결과 | KGC</title>
 	<link rel="stylesheet" href="/front/css/ui.kgc.css">
 	<link rel="stylesheet" href="/front/css/jquery-ui.1.10.3.css">	
 	<script src="/front/js/polyfill.js"></script>
@@ -143,3 +143,99 @@
 	</nav>
 	<!-- navigation : e -->
 
+
+
+<div id="wrap">
+
+	<!-- 검색 : s -->
+	<div class="search result">
+		<h2>검색</h2>
+		<form action="product.html" method="get" accept-charset="utf-8" class="search-form">
+			<input type="text" name="searchStr" value="" class="search-input" id="" placeholder="검색어를 입력하세요.">
+			<button type="submit"><span class="blind">검색하기</span></button>
+		</form>
+	</div>
+	<!-- 검색 : e -->
+</div>
+
+
+<!-- 개발 진행시 아래코드는 삭제 부탁드립니다. -->
+<script>
+var getQueryString = function(paramName){
+	var href = window.location.href;
+	var queryString = href.split('?');
+	var params = queryString[1].split('&');
+	var size = params.length;
+	var paramObj = {};
+
+	for ( var i=0; i<size; i++ ) {
+		var param = params[i].split('=');
+		paramObj[param[0]] = decodeURI(param[1]);
+	}
+
+	return paramObj[paramName];
+};
+$('form.search-form > input.search-input').val( getQueryString('searchStr') );
+</script>
+
+	
+	<!-- footer : s -->
+	<footer id="footer">
+		
+		<ul class="foot-menu">
+			<li><a href="#"><span>멤버스안내</span></a></li>
+			<li><a href="#"><span>이용약관</span></a></li>
+			<li><a href="#"><span>개인정보 처리방침</span></a></li>
+		</ul>
+
+		<div class="btn-group">
+			<a href="#" class="btn"><span>온라인 쇼핑몰</span></a>
+			<a href="#" class="btn"><span>PC버전 보기</span></a>
+		</div>
+
+		<address>
+			<span class="addr">주소 : 대전광역시 대덕구 벛꽃길 71(평촌동)<br>고객상담실 : 1588-2304 / 080-041-0303</span>
+			<span class="copyright">COPYRIGHT 2016 BY korea ginseng corp.<br>all rights reserved.</span>
+		</address>
+
+	</footer>
+	<!-- footer : e -->
+
+		
+	<div class="floating">
+		
+		<button class="to-top" type="button"><span class="blind">위로가기</span></button>
+
+		<div class="floating-menu">
+			<ul>
+				<li>
+					<a href="../main/index.html">
+						<i><span class="blind">아이콘</span></i>
+						<span>홈</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i><span class="blind">아이콘</span></i>
+						<span>카테고리</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i><span class="blind">아이콘</span></i>
+						<span>이벤트</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i><span class="blind">아이콘</span></i>
+						<span>매장찾기</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+	</div>	
+
+</body>
+</html>
