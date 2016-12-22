@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title>메인 | KGC</title>
-	<link rel="stylesheet" href="/front/css/ui.kgc.css">
-	<link rel="stylesheet" href="/front/css/jquery-ui.1.10.3.css">	
+	<link rel="stylesheet" href="/front/css/jquery-ui.1.10.3.css">
+	<link rel="stylesheet" type="text/css" href="/front/css/kgc.all.css">
 	<script src="/front/js/polyfill.js"></script>
 	<script src="/front/js/jquery.js"></script>
 	<script src="/front/js/ui.kgc.js"></script>
@@ -38,8 +38,8 @@
 			<div class="search">
 				<h2>검색</h2>
 				<form action="../search/product.html" method="get" accept-charset="utf-8" class="search-form">
-					<input type="text" name="searchStr" value="" class="search-input" id="" placeholder="검색어를 입력하세요.">
-					<button type="submit"><span class="blind">검색하기</span></button>
+					<input type="text" name="searchStr" value="" class="search-input" id="" placeholder="검색어를 입력하세요." maxlength="20">
+					<button type="submit"><span>검색</span></button>
 				</form>
 				<div class="popular-list">
 					<h2>인기검색어</h2>
@@ -50,6 +50,7 @@
 					<a href="#"><span>아이패스</span></a>
 					<a href="#"><span>천삼정</span></a>
 				</div>
+				<button type="button" class="btn-close"><span class="blind">닫기</span></button>
 			</div>
 			<!-- 검색 : e -->
 
@@ -323,7 +324,7 @@ ui.swiper.init('.event-banner .swiper-container', {
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="/html/common/category.html">
 						<i><span class="blind">아이콘</span></i>
 						<span>카테고리</span>
 					</a>
