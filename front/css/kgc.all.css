@@ -196,21 +196,65 @@ h2 {
             background-size: 7px 12px; }
 
 /* button */
-.btn-more {
+.btn {
+  width: 100%;
+  display: inherit;
+  -webkit-box-pack: center;
+          justify-content: center;
+  font-size: 15px;
+  font-family: "NanumBarunGothicBold", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 11px 0 8px;
+  text-align: center; }
+  .btn.normal {
+    color: #333;
+    border: 2px solid #333;
+    background-color: #fff; }
+  .btn.red {
+    color: #fff;
+    border: 2px solid #d71921;
+    background-color: #d71921; }
+
+.btn-group {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between; }
+  .btn-group .btn + .btn {
+    margin-left: 12px; }
+
+button.full-btn {
   display: block;
   width: 100%;
   text-align: center;
   background-color: #f5f4f4;
   padding: 13px 0;
-  margin: 10px 0; }
-  .btn-more strong {
+  margin: 30px 0; }
+  button.full-btn strong {
     font-size: 15px;
     font-weight: normal;
     font-family: "NanumBarunGothicBold", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
     line-height: 17px; }
-  .btn-more span {
+  button.full-btn span {
     font-size: 12px;
     line-height: 17px; }
+  button.full-btn.more strong {
+    padding-right: 22px;
+    background-color: transparent;
+    background-image: url(/front/images/ico/ico_arrow_down_gray.png);
+    background-repeat: no-repeat;
+    background-position: 100% 5px;
+    -webkit-background-size: 12px 7px;
+            background-size: 12px 7px; }
+  button.full-btn.list-back strong {
+    padding-left: 17px;
+    background-color: transparent;
+    background-image: url(/front/images/ico/ico_arrow_left_gray.png);
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+    -webkit-background-size: 7px 12px;
+            background-size: 7px 12px; }
 
 /* overflow 가능하게 만들기 */
 .overthrow {
@@ -233,8 +277,30 @@ p.nodata {
 
 /* 2depth 메뉴 */
 .sub-navi {
-  background-color: #d71921; }
+  background-color: #d71921;
+  position: relative; }
+  .sub-navi:after, .sub-navi:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    z-index: 30; }
+  .sub-navi.fade:after {
+    background: -webkit-gradient(linear, left top, right top, color-stop(30%, #d71921), to(rgba(215, 25, 33, 0)));
+    background: linear-gradient(to right, #d71921 30%, rgba(215, 25, 33, 0) 100%);
+    left: 0;
+    right: auto; }
+  .sub-navi.fade:before {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(215, 25, 33, 0)), color-stop(70%, #d71921));
+    background: linear-gradient(to right, rgba(215, 25, 33, 0) 0%, #d71921 70%);
+    right: 0;
+    left: auto; }
   .sub-navi ul {
+    position: relative;
+    z-index: 10;
     overflow-x: auto;
     text-align: center;
     font-size: 0;
@@ -252,7 +318,7 @@ p.nodata {
 
 /* 본문 내용 */
 .description {
-  margin-top: 20px; }
+  margin: 20px 12px 0; }
   .description h2.tit {
     font-size: 16px;
     font-family: "NanumBarunGothic", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
@@ -460,9 +526,9 @@ p.nodata {
     #footer .foot-menu a {
       color: #333;
       font-size: 12px; }
-  #footer .btn-group {
+  #footer .foot-btn-group {
     margin-bottom: 17px; }
-    #footer .btn-group .btn {
+    #footer .foot-btn-group .foot-btn {
       display: inline-block;
       border: 1px solid #909090;
       padding: 2px 6px 0;
@@ -719,9 +785,103 @@ button.to-top {
       color: #777;
       text-indent: 22px; }
 
+/* 탭 (링크) */
+.tab {
+  width: 100%;
+  margin-top: 40px; }
+  .tab ul {
+    display: table;
+    width: 100%; }
+    .tab ul li {
+      display: table-cell;
+      border-collapse: collapse;
+      width: 33%;
+      height: 40px;
+      position: relative;
+      z-index: 10; }
+      .tab ul li a {
+        display: block;
+        position: relative;
+        height: 40px;
+        width: 100%;
+        padding: 11px 0;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        text-align: center;
+        font-size: 14px;
+        font-family: "NanumBarunGothicBold", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
+        color: #777; }
+        .tab ul li a:after, .tab ul li a:before {
+          content: '';
+          display: block; }
+        .tab ul li a:after {
+          width: 100%;
+          height: 1px;
+          background-color: #d0d0d0;
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: auto;
+          bottom: auto;
+          z-index: 30; }
+        .tab ul li a:before {
+          width: 1px;
+          height: 38px;
+          background-color: #d0d0d0;
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: auto;
+          bottom: auto;
+          z-index: 40; }
+      .tab ul li:last-child.active:before {
+        content: '';
+        display: block;
+        width: 2px;
+        height: 100%;
+        background-color: #d71921;
+        position: absolute;
+        left: auto;
+        top: 0;
+        right: 0;
+        bottom: auto;
+        z-index: 40; }
+      .tab ul li.active {
+        width: 34%;
+        z-index: 10; }
+        .tab ul li.active:after {
+          background-color: #fff; }
+        .tab ul li.active a {
+          color: #d71921; }
+          .tab ul li.active a:after {
+            height: 2px;
+            background-color: #d71921; }
+          .tab ul li.active a:before {
+            width: 2px;
+            height: 100%;
+            background-color: #d71921; }
+        .tab ul li.active + li a:before {
+          width: 2px;
+          background-color: #d71921; }
+      .tab ul li:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #d71921;
+        position: absolute;
+        left: 0;
+        top: auto;
+        right: auto;
+        bottom: 0;
+        z-index: 30; }
+
 /* [== 공통 wrapper ==] */
 #wrap {
   margin-top: 56px; }
+
+.inner {
+  padding: 0 12px; }
 
 /**************************************************************************************
                 파일 별 구분선

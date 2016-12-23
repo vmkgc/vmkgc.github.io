@@ -146,45 +146,29 @@
 
 
 <style>
-h2.title {
-	margin-top: 30px;
-}
-h2.title:before {
-	content: '**';
-}
-#wrap {
-	padding: 0 12px;
-}
+h2.title { text-indent: 15px; }
+h2.title:first-child {padding-top: 20px;}
+h2.title:before {content: '●';}
+hr {border-top:1px solid #000; margin: 20px 0 25px;}
 </style>
+
+<div id="wrap">
 
 	<h2 class="title">2depth navi</h2>	
 	<div class="sub-navi">
 		<ul>
 			<li class="active"><a href="#">활성화</a></li>
 			<li><a href="#">비활성화</a></li>
-			<li><a href="#">메뉴</a></li>
-			<li><a href="#">하하하</a></li>
-			<li><a href="#">네글자다</a></li>
-			<li><a href="#">다섯글자다</a></li>
+			<li><a href="#">다섯글자임</a></li>
 			<li><a href="#">여섯글자에요</a></li>
-			<li><a href="#">달임액</a></li>
-			<li><a href="#">홍삼분</a></li>
-			<li><a href="#">달임액</a></li>
-			<li><a href="#">홍삼분</a></li>
-			<li><a href="#">달임액</a></li>
-			<li><a href="#">홍삼분</a></li>
+			<li><a href="#">테스트</a></li>
+			<li><a href="#">테스트</a></li>
+			<li><a href="#">테스트</a></li>
+			<li><a href="#">테스트</a></li>
 		</ul>
 	</div>
-<script>
-ui.swiper.init('.sub-navi.swiper-container', {
-	slidesPerView: 4,
-	centeredSlides: true,
-	spaceBetween: 30,
-	grabCursor: true
-});
-</script>
 
-<div id="wrap">
+	<hr>
 
 	<h2 class="title">Description</h2>
 	<div class="description">
@@ -196,7 +180,63 @@ ui.swiper.init('.sub-navi.swiper-container', {
 		<p class="txt">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세. 이 기상과 이마음으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세</p>
 	</div>
 
+	<hr>
+
+	<h2 class="title">버튼</h2>
+
+	<div class="btn-group inner">
+		<a href="#" class="btn normal">일반형</a>
+		<a href="#" class="btn red">빨간색</a>
+	</div>
+
+	<!-- full 버튼 : s -->
+	<button type="button" class="full-btn more">
+		<strong>10개 더보기 <span>(1/21)</span></strong>
+	</button>
+	<!-- full 버튼 : e -->
+
+	<!-- full 버튼 : s -->
+	<button type="button" class="full-btn list-back">
+		<strong>제품 목록으로 돌아가기</strong>
+	</button>
+	<!-- full 버튼 : e -->
+
+	<hr>
+
+	<h2 class="title">탭</h2>
+
+	<!-- tab : s -->
+	<div class="tab">
+		<ul>
+			<li class="active"><a href="#"><span>제품설명</span></a></li>
+			<li><a href="#"><span>추출방법</span></a></li>
+			<li><a href="#"><span>영양성분</span></a></li>
+		</ul>
+	</div>
+	<!-- tab : e -->
+	<!-- tab : s -->
+	<div class="tab">
+		<ul>
+			<li><a href="#"><span>제품설명</span></a></li>
+			<li class="active"><a href="#"><span>추출방법</span></a></li>
+			<li><a href="#"><span>영양성분</span></a></li>
+		</ul>
+	</div>
+	<!-- tab : e -->
+	<!-- tab : s -->
+	<div class="tab">
+		<ul>
+			<li><a href="#"><span>제품설명</span></a></li>
+			<li><a href="#"><span>추출방법</span></a></li>
+			<li class="active"><a href="#"><span>영양성분</span></a></li>
+		</ul>
+	</div>
+	<!-- tab : e -->
+
 </div>
+<script>
+ui.common.subnaviPositionSet();
+</script>
 
 	
 	<!-- footer : s -->
@@ -208,9 +248,9 @@ ui.swiper.init('.sub-navi.swiper-container', {
 			<li><a href="#"><span>개인정보 처리방침</span></a></li>
 		</ul>
 
-		<div class="btn-group">
-			<a href="#" class="btn"><span>온라인 쇼핑몰</span></a>
-			<a href="#" class="btn"><span>PC버전 보기</span></a>
+		<div class="foot-btn-group">
+			<a href="#" class="foot-btn"><span>온라인 쇼핑몰</span></a>
+			<a href="#" class="foot-btn"><span>PC버전 보기</span></a>
 		</div>
 
 		<address>
