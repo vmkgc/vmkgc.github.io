@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<title>가이드 | KGC</title>
+	<title>로그인 | KGC</title>
 	<link rel="stylesheet" href="/front/css/jquery-ui.1.10.3.css">
 	<link rel="stylesheet" type="text/css" href="/front/css/kgc.all.css">
 	<script src="/front/js/polyfill.js"></script>
@@ -145,93 +145,106 @@
 	<!-- navigation : e -->
 
 
-<style>
-h2.title { text-indent: 15px; }
-h2.title:first-child {padding-top: 20px;}
-h2.title:before {content: '●';}
-hr {border-top:1px solid #000; margin: 20px 0 25px;}
-</style>
 
 <div id="wrap">
-
-	<h2 class="title">2depth navi</h2>	
+	
 	<div class="sub-navi">
 		<ul>
-			<li class="active"><a href="#">활성화</a></li>
-			<li><a href="#">비활성화</a></li>
-			<li><a href="#">다섯글자임</a></li>
-			<li><a href="#">여섯글자에요</a></li>
-			<li><a href="#">테스트</a></li>
-			<li><a href="#">테스트</a></li>
-			<li><a href="#">테스트</a></li>
-			<li><a href="#">테스트</a></li>
+			<li class="active"><a href="#">포인트현황</a></li>
+			<li><a href="#">제품구매내역</a></li>
+			<li><a href="#">정관장「The드림」</a></li>
 		</ul>
 	</div>
 
-	<hr>
+	<div class="point-status">
+		<div class="status green"> <!-- 등급에 따른 class 삽입 -->
+			<div class="grade">
+				<span class="grade-icon">
+					<span class="blind">green 등급</span>
+				</span>
+				<a href="#" class="btn-grade-guide">회원등급 안내</a>
+			</div>
+			<div class="explain">
+				<p class="txt"><strong>홍길동</strong> 님의 회원등급은<br><strong class="grade-color">GREEN</strong> 입니다.</p>
+				<p class="sub-txt">Green등급 적립비율 : 0.5%</p>
+			</div>
+		</div>
 
-	<h2 class="title">Description</h2>
-	<div class="description">
-		<h2 class="tit">제목줄 입니다</h2>
-		<p class="txt">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세. 이 기상과 이마음으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세</p>
+		<div class="inner">
+			
+			<table class="tbl point">
+				<caption>포인트 안내</caption>
+				<colgroup>
+					<col style="width: 50%;">
+					<col style="width: 50%;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th colspan="2">
+							<span class="fl">멤버스 카드 번호</span>
+							<span class="fr content">0000-0000-0000-0000</span>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<strong>총 누적포인트</strong>
+							<p>480<span class="unit">P</span></p>
+						</td>
+						<td>
+							<strong>총 사용한 포인트</strong>
+							<p>999<span class="unit">P</span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>사용가능 포인트</strong>
+							<p>999<span class="unit">P</span></p>
+						</td> 
+						<td>
+							<strong>소멸예정 포인트</strong>
+							<p>999<span class="unit">P</span></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h2 class="tbl-title">월별 이용내역</h2>
+			<table class="tbl">
+				<caption>월별 이용내역</caption>
+				<colgroup>
+					<col style="width:33%;">
+					<col style="width:36%;">
+					<col style="width:31%;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">등록일</th>
+						<th scope="col">내역</th>
+						<th scope="col">포인트</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2016-06-30</td>
+						<td>매출포인트</td>
+						<td>180</td>
+					</tr>
+					<tr>
+						<td>2016-06-30</td>
+						<td>매출포인트</td>
+						<td>360</td>
+					</tr>
+					<!-- 이용내역이 없을 경우 -->
+					<tr>
+						<td colspan="3" class="nodata">최근 6개월간 이용내역이 없습니다.</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
 	</div>
-	<div class="description">
-		<h2 class="tit">제목줄 입니다</h2>
-		<p class="txt">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세. 이 기상과 이마음으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세</p>
-	</div>
-
-	<hr>
-
-	<h2 class="title">버튼</h2>
-
-	<div class="btn-group inner">
-		<a href="#" class="btn normal">일반형</a>
-		<a href="#" class="btn red">빨간색</a>
-	</div>
-
-	<!-- full 버튼 : s -->
-	<button type="button" class="full-btn more">
-		<strong>10개 더보기 <span>(1/21)</span></strong>
-	</button>
-	<!-- full 버튼 : e -->
-
-	<!-- full 버튼 : s -->
-	<button type="button" class="full-btn list-back">
-		<strong>제품 목록으로 돌아가기</strong>
-	</button>
-	<!-- full 버튼 : e -->
-
-	<hr>
-
-	<h2 class="title">탭</h2>
-
-	<!-- tab : s -->
-	<div class="tab">
-		<ul>
-			<li class="active"><a href="#"><span>제품설명</span></a></li>
-			<li><a href="#"><span>추출방법</span></a></li>
-			<li><a href="#"><span>영양성분</span></a></li>
-		</ul>
-	</div>
-	<!-- tab : e -->
-	<!-- tab : s -->
-	<div class="tab">
-		<ul>
-			<li><a href="#"><span>제품설명</span></a></li>
-			<li class="active"><a href="#"><span>추출방법</span></a></li>
-			<li><a href="#"><span>영양성분</span></a></li>
-		</ul>
-	</div>
-	<!-- tab : e -->
-	<!-- tab : s -->
-	<div class="tab">
-		<ul>
-			<li><a href="#"><span>제품설명</span></a></li>
-			<li><a href="#"><span>추출방법</span></a></li>
-			<li class="active"><a href="#"><span>영양성분</span></a></li>
-		</ul>
-	</div>
-	<!-- tab : e -->
 
 </div>
 
