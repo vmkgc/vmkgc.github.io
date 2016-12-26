@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<title>로그인 | KGC</title>
+	<title>제품구매내역 | 마이페이지 | KGC</title>
 	<link rel="stylesheet" href="/front/css/jquery-ui.1.10.3.css">
 	<link rel="stylesheet" type="text/css" href="/front/css/kgc.all.css">
 	<script src="/front/js/polyfill.js"></script>
@@ -148,14 +148,18 @@
 
 <div id="wrap">
 	
+	<!-- 서브메뉴 : s -->
 	<div class="sub-navi">
 		<ul>
-			<li><a href="#">포인트현황</a></li>
-			<li class="active"><a href="#">제품구매내역</a></li>
-			<li><a href="#">정관장「The드림」</a></li>
+			<li><a href="./point.html">포인트현황</a></li>
+			<li class="active"><a href="./purchaseList.html">제품구매내역</a></li>
+			<li><a href="./thedream.html">정관장「The드림」</a></li>
+			<li><a href="./personalInfo.html">개인정보</a></li>
 		</ul>
 	</div>
-
+	<!-- 서브메뉴 : e -->
+	
+	<!-- 등급안내 : s -->
 	<div class="point-status">
 		<div class="status green"> <!-- 등급에 따른 class 삽입 -->
 			<div class="grade">
@@ -169,71 +173,72 @@
 				<p class="sub-txt">Green등급 적립비율 : 0.5%</p>
 			</div>
 		</div>
+	</div>
+	<!-- 등급안내 : e -->
 
-		<div class="inner">
-			
-			<table class="tbl point">
-				<caption>포인트 안내</caption>
-				<colgroup>
-					<col style="width: 50%;">
-					<col style="width: 50%;">
-				</colgroup>
-				<thead>
-					<tr>
-						<th colspan="2">
-							<span class="fl">조회기간</span>
-							<span class="fr content">2016.06.01~2016.07.20(최근 6개월)</span>
-						</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>
-							<strong>총 구매금액</strong>
-							<p>180,000<span class="unit">원</span></p>
-						</td>
-						<td>
-							<strong>사용 가능 포인트</strong>
-							<p>999<span class="unit">P</span></p>
-						</td>
-					</tr>
-				</tbody>
-			</table>
+	<div class="inner">
+		
+		<table class="tbl point">
+			<caption>포인트 안내</caption>
+			<colgroup>
+				<col style="width: 50%;">
+				<col style="width: 50%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th colspan="2">
+						<span class="fl">조회기간</span>
+						<span class="fr content">2016.06.01~2016.07.20(최근 6개월)</span>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<strong>총 구매금액</strong>
+						<p>180,000<span class="unit">원</span></p>
+					</td>
+					<td>
+						<strong>사용 가능 포인트</strong>
+						<p>999<span class="unit">P</span></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 
-			<h2 class="tbl-title">구매 내역 조회</h2>
-			<table class="tbl">
-				<caption>구매 내역 조회</caption>
-				<colgroup>
-					<col style="width:33%;">
-					<col style="width:36%;">
-					<col style="width:31%;">
-				</colgroup>
-				<thead>
-					<tr>
-						<th scope="col">구매일</th>
-						<th scope="col">구매제품</th>
-						<th scope="col">이용금액</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>2016-06-30</td>
-						<td>홍삼정에브리타임 (10ml x 30포)</td>
-						<td>90,000원</td>
-					</tr>
-					<tr>
-						<td>2016-06-30</td>
-						<td>홍삼정에브리타임</td>
-						<td>1,000원</td>
-					</tr>
-					<!-- 이용내역이 없을 경우 -->
-					<tr>
-						<td colspan="3" class="nodata">최근 6개월간 이용내역이 없습니다.</td>
-					</tr>
-				</tbody>
-			</table>
+		<h2 class="tbl-title">구매 내역 조회</h2>
+		<table class="tbl">
+			<caption>구매 내역 조회</caption>
+			<colgroup>
+				<col style="width:33%;">
+				<col style="width:36%;">
+				<col style="width:31%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">구매일</th>
+					<th scope="col">구매제품</th>
+					<th scope="col">이용금액</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2016-06-30</td>
+					<td>홍삼정에브리타임 (10ml x 30포)</td>
+					<td>90,000원</td>
+				</tr>
+				<tr>
+					<td>2016-06-30</td>
+					<td>홍삼정에브리타임</td>
+					<td>1,000원</td>
+				</tr>
+				<!-- 이용내역이 없을 경우 -->
+				<tr>
+					<td colspan="3" class="nodata">최근 6개월간 이용내역이 없습니다.</td>
+				</tr>
+			</tbody>
+		</table>
 
-		</div>
 	</div>
 
 </div>

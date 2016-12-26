@@ -167,6 +167,11 @@ h2 {
     float: right;
 }
 
+/* padding */
+.pdt-0 {
+    padding-top: 0;
+}
+
 /* 높이 꽉 차게 */
 .h-100 {
     height: 100%;
@@ -393,16 +398,16 @@ p.nodata {
 }
 
 /* 본문 내용 */
-.description {
-    margin: 20px 12px 0;
-}
-
 .description h2.tit {
     font-size: 16px;
     font-family: "NanumBarunGothic", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
     color: #333;
     border-bottom: 1px solid #d71921;
     padding-bottom: 5px;
+}
+
+.description h2.tit.no-border {
+    border: 0;
 }
 
 .description h2.tit + table.tbl thead th {
@@ -423,16 +428,16 @@ p.nodata {
     margin-top: 40px;
 }
 
-/* 테이블 */
+/* 테이블 - thead가 있는 경우 */
 h2.tbl-title {
     font-size: 16px;
     font-family: "NanumBarunGothic", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
     margin-bottom: 4px;
+    margin-top: 47px;
 }
 
 table.tbl {
     width: 100%;
-    margin-bottom: 47px;
     table-layout: fixed;
     border-collapse: collapse;
 }
@@ -499,6 +504,16 @@ table.tbl.point tbody td > strong {
 table.tbl.point tbody td p {
     text-align: right;
     margin-top: 5px;
+}
+
+/* 테이블 - thead가 없는 경우 */
+table.tbl.row tbody th {
+    border-bottom: 1px solid #d0d0d0;
+    background-color: #fbfbfb;
+}
+
+table.tbl.row tbody td {
+    text-align: left;
 }
 
 /* 일반 리스트 */
@@ -622,6 +637,22 @@ dl.step-list + dl.step-list {
     background-position: 38px 0;
     -webkit-background-size: 3px 38px;
     background-size: 3px 38px;
+}
+
+/* 안내 문구 */
+p.notice {
+    padding: 18px 14px 18px 49px;
+    margin-top: 18px;
+    margin-bottom: 40px;
+    font-size: 11px;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    background-color: #f8f8f8;
+    background-image: url(/front/images/ico/ico_lock.png);
+    background-repeat: no-repeat;
+    background-position: 14px 12px;
+    -webkit-background-size: 27px 23px;
+    background-size: 27px 23px;
 }
 
 /* 디바이스 별 폰트사이즈 */
@@ -1347,7 +1378,7 @@ button.to-top {
 }
 
 .inner {
-    padding: 0 12px;
+    padding: 20px 12px;
 }
 
 /**************************************************************************************
@@ -2244,11 +2275,7 @@ button.swiper-pagination-bullet {
     text-decoration: underline;
 }
 
-/* 마이페이지 - 포인트 현황 */
-.point-status > .inner {
-    padding-top: 20px;
-}
-
+/* 마이페이지 - 포인트 현황, 제품구매내역, 정관장더드림, 개인정보 */
 .point-status .status {
     display: table;
     width: 100%;
@@ -2315,6 +2342,67 @@ button.swiper-pagination-bullet {
     border-top: 1px solid #6e6e6e;
     margin-top: 13px;
     padding-top: 5px;
+}
+
+/* 기타 - 멤버쉽안내 */
+.inner .members-list {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.members-list li {
+    background-color: #f8f8f8;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #d0d0d0;
+    font-size: 12px;
+    display: table;
+    height: 88px;
+}
+
+.members-list li .red {
+    color: #d71921;
+}
+
+.members-list li i, .members-list li p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.members-list li i {
+    width: 80px;
+    padding-left: 33px;
+}
+
+.members-list li i.ico1 {
+    background-color: transparent;
+    background-image: url(/front/images/ico/ico_member_point.png);
+    background-repeat: no-repeat;
+    background-position: 33px 26px;
+    -webkit-background-size: 46px 37px;
+    background-size: 46px 37px;
+}
+
+.members-list li i.ico2 {
+    background-color: transparent;
+    background-image: url(/front/images/ico/ico_member_cashback.png);
+    background-repeat: no-repeat;
+    background-position: 33px 26px;
+    -webkit-background-size: 46px 37px;
+    background-size: 46px 37px;
+}
+
+.members-list li i.ico3 {
+    background-color: transparent;
+    background-image: url(/front/images/ico/ico_member_promotion.png);
+    background-repeat: no-repeat;
+    background-position: 33px 26px;
+    -webkit-background-size: 46px 37px;
+    background-size: 46px 37px;
+}
+
+.members-list li p {
+    padding-left: 31px;
+    padding-right: 30px;
 }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuLi9jc3Mva2djLmFsbC5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
