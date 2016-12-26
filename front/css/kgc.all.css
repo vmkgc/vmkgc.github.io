@@ -424,8 +424,22 @@ p.nodata {
     margin-top: 8px;
 }
 
-.description + .description {
+.description .txt strong.tit {
+    display: block;
+    color: #d71921;
+    font-family: "NanumBarunGothic", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
+}
+
+.description .txt ~ .txt {
+    margin-top: 30px;
+}
+
+.description + .description, .description ~ .description {
     margin-top: 40px;
+}
+
+.description + .normal-list {
+    margin-top: 30px;
 }
 
 /* 테이블 - thead가 있는 경우 */
@@ -639,6 +653,97 @@ dl.step-list + dl.step-list {
     background-size: 3px 38px;
 }
 
+/* 단계별 리스트 type02 */
+ul.flow {
+    padding: 20px 61px;
+    margin: 9px -12px 0;
+    background-color: #fbfbfb;
+}
+
+ul.flow li {
+    font-size: 13px;
+    position: relative;
+}
+
+ul.flow li span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ul.flow li:before {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 9px;
+    background: #fff;
+    padding: 2px 9px 0;
+    margin-right: 26px;
+    border: 1px solid #d71921;
+    border-radius: 10px;
+}
+
+ul.flow li:nth-of-type(1):before {
+    content: "STEP1";
+}
+
+ul.flow li:nth-of-type(2):before {
+    content: "STEP2";
+}
+
+ul.flow li:nth-of-type(3):before {
+    content: "STEP3";
+}
+
+ul.flow li:nth-of-type(4):before {
+    content: "STEP4";
+}
+
+ul.flow li + li {
+    padding-top: 24px;
+}
+
+ul.flow li + li:after {
+    content: '';
+    width: 1px;
+    height: 18px;
+    background-color: #d0d0d0;
+    position: absolute;
+    top: 3px;
+    left: 24px;
+    z-index: 30;
+}
+
+/* 단계별 리스트 - 박스형 */
+.box-flow li {
+    font-size: 12px;
+    display: table;
+}
+
+.box-flow li + li {
+    margin-top: 5px;
+}
+
+.box-flow li:first-child {
+    margin-top: 20px;
+}
+
+.box-flow li strong, .box-flow li p {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "NanumBarunGothic", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
+}
+
+.box-flow li strong {
+    width: 70px;
+    height: 70px;
+    background-color: #ededed;
+    text-align: center;
+}
+
+.box-flow li p {
+    padding-left: 15px;
+    color: #666;
+}
+
 /* 안내 문구 */
 p.notice {
     padding: 18px 14px 18px 49px;
@@ -655,6 +760,18 @@ p.notice {
     background-size: 27px 23px;
 }
 
+p.warn {
+    color: #999;
+    font-size: 10px;
+    margin-top: 8px;
+}
+
+p.warn:before {
+    content: '*';
+    margin-right: 4px;
+}
+
+/**/
 /* 디바이스 별 폰트사이즈 */
 /**************************************************************************************
 								파일 별 구분선
