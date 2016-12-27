@@ -144,6 +144,12 @@ h2 {
     font-family: "NanumBarunGothicBold", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
 }
 
+/* 
+ body font default
+  - size: 14px;
+  - color: #666;
+  ** 추후 변경 해야 함(디자인 반영)
+ */
 /* ==============================
   	util
    ============================== */
@@ -317,6 +323,90 @@ button.full-btn.list-back strong {
     background-position: 0 2px;
     -webkit-background-size: 7px 12px;
     background-size: 7px 12px;
+}
+
+/* 토글버튼 - 화살표 */
+.toggle {
+    position: relative;
+}
+
+.toggle.plus button.item-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 41px;
+    height: 100%;
+}
+
+.toggle.plus button.item-toggle:before, .toggle.plus button.item-toggle:after {
+    content: '';
+    display: block;
+    background-color: #666;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.toggle.plus button.item-toggle:before {
+    width: 13px;
+    height: 1px;
+    margin-left: -6px;
+}
+
+.toggle.plus button.item-toggle:after {
+    width: 1px;
+    height: 13px;
+    margin-top: -6px;
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.toggle.plus.active button.item-toggle:after {
+    -webkit-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.toggle.arrow button.item-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 42px;
+    height: 100%;
+}
+
+.toggle.arrow button.item-toggle:before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -7px 0 0px -5px;
+    border-color: #777;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    -webkit-transform-origin: 70% 70%;
+    transform-origin: 70% 70%;
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.toggle.arrow.active button.item-toggle:before {
+    border-color: #d71921;
+    -webkit-transform: rotateZ(225deg);
+    transform: rotateZ(225deg);
+    -webkit-transition: 0.3;
+    transition: 0.3;
 }
 
 /* overflow 가능하게 만들기 */
@@ -524,6 +614,9 @@ table.tbl.point tbody td p {
 table.tbl.row tbody th {
     border-bottom: 1px solid #d0d0d0;
     background-color: #fbfbfb;
+    font-size: 12px;
+    padding-left: 10px;
+    text-align: left;
 }
 
 table.tbl.row tbody td {
@@ -1308,10 +1401,11 @@ button.to-top {
 }
 
 /* [== 카테고리 ==] */
-.category-list a {
+.category-list a, .category-list h2 {
     display: block;
     line-height: 1.2;
     padding: 15px 0 14px;
+    font-family: "NanumBarunGothic", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
 }
 
 .category-list .depth1 > li {
@@ -1319,31 +1413,10 @@ button.to-top {
     background: #fbfbfb;
 }
 
-.category-list .depth1 > li > a {
+.category-list .depth1 > li > h2 {
     font-size: 16px;
-    font-family: "NanumBarunGothicBold", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
     text-indent: 12px;
     position: relative;
-}
-
-.category-list .depth1 > li > a:after {
-    content: '';
-    display: block;
-    width: 12px;
-    height: 7px;
-    margin-top: -4px;
-    background-color: transparent;
-    background-image: url(/front/images/ico/ico_arrow_down_black.png);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    -webkit-background-size: 12px 7px;
-    background-size: 12px 7px;
-    position: absolute;
-    left: auto;
-    top: 50%;
-    right: 12px;
-    bottom: auto;
-    z-index: 10;
 }
 
 .category-list .depth1 > li.active > a:after {
@@ -2185,18 +2258,19 @@ button.swiper-pagination-bullet {
 								파일 별 구분선
 **************************************************************************************/
 /* 검색결과 리스트 */
-.search-result-list .product {
+/* 상품리스트 */
+.product {
     border-bottom: 1px solid #d0d0d0;
 }
 
-.search-result-list .product a.product-info {
+.product a.product-info {
     width: 100%;
     height: 125px;
     display: block;
     position: relative;
 }
 
-.search-result-list .product a.product-info .thumb {
+.product a.product-info .thumb {
     width: 125px;
     display: block;
     position: absolute;
@@ -2207,7 +2281,7 @@ button.swiper-pagination-bullet {
     z-index: 10;
 }
 
-.search-result-list .product a.product-info .content {
+.product a.product-info .content {
     display: block;
     height: 100%;
     position: relative;
@@ -2218,7 +2292,7 @@ button.swiper-pagination-bullet {
     font-size: 16px;
 }
 
-.search-result-list .product a.product-info .content .name {
+.product a.product-info .content .name {
     display: block;
     display: block;
     font-size: 14px;
@@ -2233,7 +2307,7 @@ button.swiper-pagination-bullet {
     -webkit-box-orient: vertical;
 }
 
-.search-result-list .product a.product-info .content .price {
+.product a.product-info .content .price {
     position: absolute;
     left: 13px;
     top: auto;
@@ -2242,14 +2316,14 @@ button.swiper-pagination-bullet {
     z-index: 10;
 }
 
-.search-result-list .product .hash-tag-list {
+.product .hash-tag-list {
     padding: 4px 10px;
     border-top: 1px solid #eaeaea;
     background-color: #f4f4f4;
     text-align: right;
 }
 
-.search-result-list .product .hash-tag-list li {
+.product .hash-tag-list li {
     display: inline-block;
     font-size: 11px;
     color: #666;
@@ -2259,7 +2333,7 @@ button.swiper-pagination-bullet {
     margin-left: 4px;
 }
 
-.search-result-list .product .hash-tag-list li:first-child {
+.product .hash-tag-list li:first-child {
     margin-left: 0;
 }
 
@@ -2520,6 +2594,251 @@ button.swiper-pagination-bullet {
 .members-list li p {
     padding-left: 31px;
     padding-right: 30px;
+}
+
+.grade-list {
+    margin: 35px -12px 0;
+}
+
+.grade-list li {
+    padding-top: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.grade-list li.royalgold:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-image: url("/front/images/common/guide_grade_royalgold.png");
+    width: 61px;
+    height: 65px;
+    margin-left: -30px;
+    -webkit-background-size: 61px 65px;
+    background-size: 61px 65px;
+}
+
+.grade-list li.gold:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-image: url("/front/images/common/guide_grade_gold.png");
+    width: 56px;
+    height: 56px;
+    margin-left: -28px;
+    -webkit-background-size: 56px 56px;
+    background-size: 56px 56px;
+}
+
+.grade-list li.blue:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-image: url("/front/images/common/guide_grade_blue.png");
+    width: 56px;
+    height: 56px;
+    margin-left: -28px;
+    -webkit-background-size: 56px 56px;
+    background-size: 56px 56px;
+}
+
+.grade-list li.green:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-image: url("/front/images/common/guide_grade_green.png");
+    width: 56px;
+    height: 56px;
+    margin-left: -28px;
+    -webkit-background-size: 56px 56px;
+    background-size: 56px 56px;
+}
+
+.grade-list li.orange:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-image: url("/front/images/common/guide_grade_orange.png");
+    width: 56px;
+    height: 56px;
+    margin-left: -28px;
+    -webkit-background-size: 56px 56px;
+    background-size: 56px 56px;
+}
+
+.grade-list li .explain {
+    padding-top: 44px;
+    padding-bottom: 10px;
+    background-color: #ebebeb;
+}
+
+.grade-list li .explain .grade-name {
+    font-size: 16px;
+}
+
+.grade-list li .explain .txt {
+    font-size: 12px;
+}
+
+.grade-list li .point {
+    border-bottom: 1px solid #ebebeb;
+    padding: 18px 0;
+    text-align: center;
+}
+
+.grade-list li .point strong, .grade-list li .point .percent {
+    display: inline-block;
+}
+
+.grade-list li .point > strong {
+    padding: 3px 0 2px 25px;
+    font-size: 10px;
+    font-family: "NanumBarunGothic", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
+    background-color: transparent;
+    background-image: url(/front/images/ico/ico_point_small.png);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+}
+
+.grade-list li .point .percent {
+    font-size: 16px;
+    margin-left: 24px;
+}
+
+.grade-list li .point .percent:after {
+    content: '%';
+}
+
+.grade-list li .benefit {
+    text-align: center;
+    font-size: 11px;
+    border-bottom: 1px solid #ebebeb;
+    padding: 10px 0 9px;
+}
+
+.grade-list li + li {
+    margin-top: 25px;
+}
+
+/* 기타 - 이용약관 */
+.terms .enforcement {
+    font-family: "NanumBarunGothic", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
+    font-size: 14px;
+    padding: 13px 12px 11px;
+    position: relative;
+    border-bottom: 1px solid #d71921;
+}
+
+.terms .enforcement button.toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 42px;
+    height: 100%;
+}
+
+.terms .enforcement button.toggle:before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -7px 0 0px -5px;
+    border-color: #777;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    -webkit-transform-origin: 70% 70%;
+    transform-origin: 70% 70%;
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.terms .enforcement.active button.toggle:before {
+    border-color: #d71921;
+    -webkit-transform: rotateZ(225deg);
+    transform: rotateZ(225deg);
+    -webkit-transition: 0.3;
+    transition: 0.3;
+}
+
+.terms .item-list {
+    display: none;
+}
+
+.terms .item-list .item dt {
+    font-size: 14px;
+    padding: 13px 12px 11px;
+    position: relative;
+}
+
+.terms .item-list .item dd {
+    display: none;
+    background-color: #f8f8f8;
+    padding: 12px 12px 10px;
+}
+
+/* 공통 - 에러페이지(400, 500) */
+.error-page {
+    text-align: center;
+    padding: 133px 0;
+}
+
+.error-page.code-404 {
+    background-color: transparent;
+    background-image: url(/front/images/common/img_error_404.png);
+    background-repeat: no-repeat;
+    background-position: 50% 53px;
+    -webkit-background-size: 114px 80px;
+    background-size: 114px 80px;
+}
+
+.error-page.code-500 {
+    background-color: transparent;
+    background-image: url(/front/images/common/img_error_500.png);
+    background-repeat: no-repeat;
+    background-position: 50% 53px;
+    -webkit-background-size: 115px 80px;
+    background-size: 115px 80px;
+}
+
+.error-page h2 {
+    font-size: 16px;
+    color: #333;
+    font-family: "NanumBarunGothic", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
+    padding-top: 18px;
+}
+
+.error-page p {
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.error-page a.move-to-home {
+    display: inline-block;
+    background-color: #d71921;
+    color: #fff;
+    font-size: 15px;
+    font-family: "NanumBarunGothicBold", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
+    padding: 12px 37px 10px;
 }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuLi9jc3Mva2djLmFsbC5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
