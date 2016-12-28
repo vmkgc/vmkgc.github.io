@@ -256,6 +256,11 @@
 
 <script>
 ui.common.toggleAccordian('.depth1 > li > h2 button.item-toggle', '.depth2', 'click');
+
+//강제 링크 추가
+$('.depth2 li > a').each(function(){
+	$(this).attr('href', '/html/category/categoryList_type01.html');
+});
 </script>
 
 	
