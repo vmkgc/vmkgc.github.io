@@ -173,6 +173,18 @@ h2 {
     float: right;
 }
 
+.l {
+    text-align: left;
+}
+
+.r {
+    text-align: right;
+}
+
+.c {
+    text-align: center;
+}
+
 /* padding */
 .pdt-0 {
     padding-top: 0;
@@ -857,11 +869,15 @@ p.warn {
     color: #999;
     font-size: 10px;
     margin-top: 8px;
+    padding-left: 10px;
+    position: relative;
 }
 
 p.warn:before {
     content: '*';
-    margin-right: 4px;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 /**/
@@ -2839,6 +2855,191 @@ button.swiper-pagination-bullet {
     font-size: 15px;
     font-family: "NanumBarunGothicBold", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
     padding: 12px 37px 10px;
+}
+
+/* 카테고리 */
+/* 카테고리 - 상세 */
+.category-detail .img-wrap {
+    display: block;
+    height: 230px;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.category-detail .img-wrap .img {
+    display: block;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.category-detail .product-info > .inner {
+    padding-top: 17px;
+    padding-bottom: 23px;
+}
+
+.category-detail .prod-name {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.category-detail .txt {
+    font-size: 12px;
+    color: #666;
+}
+
+.category-detail .etc-list {
+    padding: 0 12px;
+    margin-bottom: 16px;
+}
+
+.category-detail .etc-list dl {
+    display: table;
+}
+
+.category-detail .etc-list dt, .category-detail .etc-list dd {
+    display: table-cell;
+    font-size: 12px;
+    color: #999;
+}
+
+.category-detail .etc-list dt {
+    width: 32px;
+}
+
+.category-detail .etc-list dd.price {
+    color: #333;
+    font-size: 14px;
+}
+
+.category-detail .how-to-dose {
+    padding: 15px 12px 12px;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+.category-detail .how-to-dose li {
+    display: inherit;
+    font-size: 11px;
+    color: #666;
+    background-image: url("/front/images/common/sp_product_detail.png");
+    -webkit-background-size: 13px 63px;
+    background-size: 13px 63px;
+    background-repeat: no-repeat;
+}
+
+.category-detail .how-to-dose li:nth-child(1) {
+    margin-right: 20px;
+    background-position: 0 0px;
+    padding-left: 14px;
+}
+
+.category-detail .how-to-dose li:nth-child(2) {
+    margin-right: 20px;
+    background-position: 0 -25px;
+    padding-left: 18px;
+}
+
+.category-detail .how-to-dose li:nth-child(3) {
+    margin-right: 20px;
+    background-position: 0 -50px;
+    padding-left: 14px;
+}
+
+.category-detail p.warn {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.category-detail .related-goods {
+    margin-top: 37px;
+    margin-bottom: 26px;
+}
+
+.category-detail .related-goods h3.tit {
+    font-size: 16px;
+    padding: 0 12px;
+    margin-bottom: 6px;
+}
+
+.category-detail .related-goods .item-list li {
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.category-detail .related-goods .item-list li > a {
+    display: block;
+    position: relative;
+    padding: 5px 12px;
+}
+
+.category-detail .related-goods .item-list li > a > span {
+    display: block;
+    height: 90px;
+}
+
+.category-detail .related-goods .item-list li:first-child {
+    border-top: 1px solid #d3d3d3;
+}
+
+.category-detail .related-goods .item-list li .thumb {
+    width: 90px;
+}
+
+.category-detail .related-goods .item-list li .thumb img {
+    width: 100%;
+}
+
+.category-detail .related-goods .item-list li .info {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 12px;
+    padding-left: 112px;
+    padding-right: 12px;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+}
+
+.category-detail .related-goods .item-list li .info strong, .category-detail .related-goods .item-list li .info .txt, .category-detail .related-goods .item-list li .info .price {
+    width: 100%;
+}
+
+.category-detail .related-goods .item-list li .info strong {
+    font-family: "NanumBarunGothic", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
+    margin-top: 5px;
+}
+
+.category-detail .related-goods .item-list li .info .txt {
+    color: #666;
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 12px;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    justify-content: center;
+    line-height: 1.4;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.category-detail .related-goods .item-list li .info .price {
+    color: #d71921;
+}
+
+.category-detail .related-goods .add-txt {
+    font-size: 11px;
+    padding: 0 12px;
+    margin-top: 10px;
 }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuLi9jc3Mva2djLmFsbC5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
