@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<title>정관장이란? | 정관장 | 브랜드소개 | KGC</title>
+	<title>매장검색 | store | KGC</title>
 	<link rel="stylesheet" href="/front/css/jquery-ui.1.10.3.css">
 	<link rel="stylesheet" type="text/css" href="/front/css/kgc.all.css">
 	<script src="/front/js/polyfill.js"></script>
@@ -154,58 +154,103 @@
 
 
 <div id="wrap">
-
-	<!-- 서브메뉴 : s -->
-	<div class="sub-navi">
+	<div class="sub-navi start-fade">
 		<ul>
-			<li class="active"><a href="../brand/about.html">정관장</a></li>
-			<li><a href="#">굿베이스</a></li>
-			<li><a href="#">동인비</a></li>
-			<li><a href="#">지니펫</a></li>
+			<li class="active"><a href="../store/store_search.html">매장검색</a></li>
+			<li><a href="../store/store_services.html">매장서비스</a></li>
 		</ul>
 	</div>
-	<!-- 서브메뉴 : e -->
-
-	<div class="about">
-		
-		<!-- tab : s -->
-		<div class="tab">
+	<div class="store_wrap">
+		<div class="store_tab">
 			<ul>
-				<li class="active"><a href="#"><span>정관장이란?</span></a></li>
-				<li><a href="#"><span>정관장 제품역사</span></a></li>
-				<li><a href="#"><span>브랜드 미션</span></a></li>
+				<li><a href="store_search.html"><span>바로 검색</span></a></li>
+				<li class="on"><a href="store_search_area.html"><span>지역검색</span></a></li>
+				<li><a href="store_search_subway.html"><span>지하철검색</span></a></li>
 			</ul>
 		</div>
-		<!-- tab : e -->
-
-		<div class="tab-contents">
-			<div class="scrolling" style="background-image: url('/front/images/sub/brand/fixed_img.jpg');">
-				<img src="/front/images/sub/brand/about_content.jpg" alt="">
-			</div>
+		<div class="store_top">
+			<div class="cate_top"><a href="store_search_area.html">서울</a></div>
 		</div>
-
+		<div class="store_cont">
+			<ul class="store_area_list">
+				<li>
+					<a href="store_search_area_detail.html">강남구</a>
+				</li>
+				<li>
+					<a href="store_search_area_detail.html">강동구</a>
+				</li>
+				<li>
+					<a href="store_search_area_detail.html">강북구 </a>
+				</li>
+				<li>
+					<a href="store_search_area_detail.html">강서구</a>
+				</li>
+				<li>
+					<a href="store_search_area_detail.html">관악구</a>
+				</li>
+				<li>
+					<a href="">광진구</a>
+				</li>
+				<li>
+					<a href="">구로구</a>
+				</li>
+				<li>
+					<a href="">금천구</a>
+				</li>
+				<li>
+					<a href="">노원구</a>
+				</li>
+				<li>
+					<a href="">도봉구</a>
+				</li>
+				<li>
+					<a href="">동대문구</a>
+				</li>
+				<li>
+					<a href="">동작구</a>
+				</li>
+				<li>
+					<a href="">마포구</a>
+				</li>
+				<li>
+					<a href="">서대문구</a>
+				</li>
+				<li>
+					<a href="">서초구</a>
+				</li>
+				<li>
+					<a href="">성동구</a>
+				</li>
+				<li>
+					<a href="">송파구</a>
+				</li>
+				<li>
+					<a href="">양천구</a>
+				</li>
+				<li>
+					<a href="">영등포구</a>
+				</li>
+				<li>
+					<a href="">용산구</a>
+				</li>
+				<li>
+					<a href="">은평구</a>
+				</li>
+				<li>
+					<a href="">종로구</a>
+				</li>
+				<li>
+					<a href="">중구</a>
+				</li>
+				<li>
+					<a href="">중랑구</a>
+				</li>
+			</ul>
+		</div>
 	</div>
-
 </div>
 
-<script>
-//scrolling content height
-(function(){
-	$(function(){
-		var footer = $('#footer').height(),
-			header = $('#header').height(),
-			floating = $('.floating').height(),
-			height = window.innerHeight - (footer + header + floating);
-		console.log(footer,header,floating);
-		$('.scrolling').css({
-			height: height
-		}).find('>img').css({
-			marginTop: height
-		})
-	});
-})();
-</script>
-
+	
 	
 	<!-- footer : s -->
 	<footer id="footer">

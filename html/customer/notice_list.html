@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<title>정관장이란? | 정관장 | 브랜드소개 | KGC</title>
+	<title>공지사항 | 고객센터 | KGC</title>
 	<link rel="stylesheet" href="/front/css/jquery-ui.1.10.3.css">
 	<link rel="stylesheet" type="text/css" href="/front/css/kgc.all.css">
 	<script src="/front/js/polyfill.js"></script>
@@ -153,58 +153,40 @@
 
 
 
-<div id="wrap">
 
-	<!-- 서브메뉴 : s -->
-	<div class="sub-navi">
+<div id="wrap">
+	<div class="sub-navi start-fade">
 		<ul>
-			<li class="active"><a href="../brand/about.html">정관장</a></li>
-			<li><a href="#">굿베이스</a></li>
-			<li><a href="#">동인비</a></li>
-			<li><a href="#">지니펫</a></li>
+			<li><a href="../customer/qa_list.html">FAQ</a></li>
+			<li class="active"><a href="../customer/notice_list.html">공지사항</a></li>
 		</ul>
 	</div>
-	<!-- 서브메뉴 : e -->
-
-	<div class="about">
-		
-		<!-- tab : s -->
-		<div class="tab">
-			<ul>
-				<li class="active"><a href="#"><span>정관장이란?</span></a></li>
-				<li><a href="#"><span>정관장 제품역사</span></a></li>
-				<li><a href="#"><span>브랜드 미션</span></a></li>
-			</ul>
-		</div>
-		<!-- tab : e -->
-
-		<div class="tab-contents">
-			<div class="scrolling" style="background-image: url('/front/images/sub/brand/fixed_img.jpg');">
-				<img src="/front/images/sub/brand/about_content.jpg" alt="">
-			</div>
-		</div>
-
+	<div class="board_list">
+		<ul>
+			<li>
+				<a href="notice_detail.html"><span class="noti">공지</span>16년 추석 프로모션 행사 안내</a>
+			</li>
+			<li>
+				<a href="notice_detail.html"><span class="noti">공지</span>16년 추석 프로모션 행사 안내</a>
+			</li>
+			<li>
+				<a href="notice_detail.html">2015년 고객이 가장 추천하는 기업(KNPS) 홍삼가공식품부문 1위 기업 선정 안내</a>
+			</li>
+			<li>
+				<a href="notice_detail.html">16년 추석 프로모션 행사 안내</a>
+			</li>
+			<li>
+				<a href="notice_detail.html">2015년 고객이 가장 추천하는 기업(KNPS) 홍삼가공식품부문 1위 기업 선정 안내</a>
+			</li>
+			<li>
+				<a href="notice_detail.html">16년 추석 프로모션 행사 안내</a>
+			</li>
+		</ul>
+		<button type="button" class="full-btn more">
+			<strong>10개 더보기 <span>(1/21)</span></strong>
+		</button>
 	</div>
-
 </div>
-
-<script>
-//scrolling content height
-(function(){
-	$(function(){
-		var footer = $('#footer').height(),
-			header = $('#header').height(),
-			floating = $('.floating').height(),
-			height = window.innerHeight - (footer + header + floating);
-		console.log(footer,header,floating);
-		$('.scrolling').css({
-			height: height
-		}).find('>img').css({
-			marginTop: height
-		})
-	});
-})();
-</script>
 
 	
 	<!-- footer : s -->
