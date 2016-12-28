@@ -3042,4 +3042,13 @@ button.swiper-pagination-bullet {
     margin-top: 10px;
 }
 
+/* 브랜드소개 - 정관장 - 정관장이란? */
+.about .scrolling {
+    overflow: auto;
+    margin-top: 20px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuLi9jc3Mva2djLmFsbC5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
