@@ -3074,6 +3074,7 @@ button.swiper-pagination-bullet {
 
 .store_tab ul li {
     display: table-cell;
+    width: 33.3%;
     position: relative;
     vertical-align: middle;
     text-align: center;
@@ -3630,11 +3631,11 @@ button.swiper-pagination-bullet {
 
 .board_list {
     margin-top: 20px;
-    border-top: 1px solid #666;
+    border-top: 1px solid #d0d0d0;
 }
 
 .board_list li {
-    border-bottom: 1px solid #d0d0d0;
+    border-bottom: 1px solid #eaeaea;
 }
 
 .board_list li .date {
