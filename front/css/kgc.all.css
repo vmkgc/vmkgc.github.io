@@ -260,7 +260,7 @@ h2 {
 }
 
 /* button */
-.btn, .store_wrap .store_top .store_search .btn_search {
+.btn {
     width: 100%;
     display: inherit;
     -webkit-box-pack: center;
@@ -273,13 +273,13 @@ h2 {
     text-align: center;
 }
 
-.btn.normal, .store_wrap .store_top .store_search .normal.btn_search {
+.btn.normal {
     color: #333;
     border: 2px solid #333;
     background-color: #fff;
 }
 
-.btn.red, .store_wrap .store_top .store_search .red.btn_search {
+.btn.red {
     color: #fff;
     border: 2px solid #d71921;
     background-color: #d71921;
@@ -292,7 +292,7 @@ h2 {
     justify-content: space-between;
 }
 
-.btn-group .btn + .btn, .btn-group .store_wrap .store_top .store_search .btn_search + .btn, .store_wrap .store_top .store_search .btn-group .btn_search + .btn, .btn-group .store_wrap .store_top .store_search .btn + .btn_search, .store_wrap .store_top .store_search .btn-group .btn + .btn_search, .btn-group .store_wrap .store_top .store_search .btn_search + .btn_search, .store_wrap .store_top .store_search .btn-group .btn_search + .btn_search {
+.btn-group .btn + .btn {
     margin-left: 12px;
 }
 
@@ -3048,15 +3048,14 @@ button.swiper-pagination-bullet {
 
 /* 브랜드소개 - 정관장 - 정관장이란? */
 .about .scrolling {
-    overflow: auto;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: 50% 50%;
 }
 
-/**************************************************************
-구분선 - 김유정
-***************************************************************/
+/**************************************************************************************
+								파일 별 구분선
+**************************************************************************************/
 .store_tab ul {
     display: table;
     height: 70px;
@@ -3184,6 +3183,12 @@ button.swiper-pagination-bullet {
     position: absolute;
     right: 0;
     top: 0;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-family: "NanumBarunGothicBold", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 11px 0 8px;
     height: 40px;
     width: 54px;
     font-size: 13px;
@@ -3217,8 +3222,14 @@ button.swiper-pagination-bullet {
     background-color: #f8f8f8;
 }
 
+.store_wrap .store_cont .nodata {
+    margin: 45px 0 0;
+    padding-bottom: 45px;
+}
+
 .store_wrap .store_cont .redata {
-    margin: 45px 0;
+    margin: 45px 0 0;
+    padding-bottom: 45px;
     font-size: 0.857em;
     text-align: center;
 }
@@ -3329,7 +3340,7 @@ button.swiper-pagination-bullet {
 }
 
 .store_wrap .store_cont .store_area_list {
-    padding: 0 12px 30px;
+    padding: 0 8px 30px;
 }
 
 .store_wrap .store_cont .store_area_list:after {
@@ -3348,16 +3359,10 @@ button.swiper-pagination-bullet {
 .store_wrap .store_cont .store_area_list li a {
     display: block;
     height: 40px;
-    margin-bottom: 10px;
-    margin-right: 4px;
+    margin: 0 4px 10px;
     background-color: #fff;
     line-height: 40px;
     border-bottom: 1px solid #dfdfdf;
-}
-
-.store_wrap .store_cont .store_area_list li:nth-child(even) a {
-    margin-right: 0;
-    margin-left: 4px;
 }
 
 .store_wrap .store_cont .store_detail {
@@ -3825,22 +3830,8 @@ button.swiper-pagination-bullet {
     background-size: 18px 18px;
 }
 
-.sample_detail .ck_list li .sample_rao .inner {
+.sample_detail .ck_list li .sample_rao .sample_inner {
     display: block;
-    padding: 15px 0 10px;
-}
-
-.sample_detail .ck_list li .sample_rao .inner .tit {
-    display: block;
-    font-size: 1em;
-    color: #666;
-    font-family: "NanumBarunGothicBold", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
-}
-
-.sample_detail .ck_list li .sample_rao .inner .txt {
-    display: block;
-    font-size: 12px;
-    color: #999;
 }
 
 .sample_detail .ck_list li input[type=radio] {
