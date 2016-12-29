@@ -101,6 +101,7 @@ select {
     border: 0;
     -webkit-appearance: none;
     background-color: transparent;
+    border-radius: 0;
 }
 
 strong, b {
@@ -3051,6 +3052,14 @@ button.swiper-pagination-bullet {
     -webkit-background-size: cover;
     background-size: cover;
     background-position: 50% 50%;
+    position: relative;
+}
+
+.about .scrolling .fixed-img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /**************************************************************************************
@@ -3183,14 +3192,12 @@ button.swiper-pagination-bullet {
     position: absolute;
     right: 0;
     top: 0;
-    -webkit-box-pack: center;
-    justify-content: center;
-    font-family: "NanumBarunGothicBold", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     padding: 11px 0 8px;
     height: 40px;
     width: 54px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "NanumBarunGothicBold", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
     font-size: 13px;
     color: #fff;
     border: 1px solid #d71921;
@@ -3224,12 +3231,12 @@ button.swiper-pagination-bullet {
 
 .store_wrap .store_cont .nodata {
     margin: 45px 0 0;
-    padding-bottom: 45px;
+    padding-bottom: 200px;
 }
 
 .store_wrap .store_cont .redata {
     margin: 45px 0 0;
-    padding-bottom: 45px;
+    padding-bottom: 200px;
     font-size: 0.857em;
     text-align: center;
 }
@@ -3276,6 +3283,7 @@ button.swiper-pagination-bullet {
 
 .store_wrap .store_cont .tit_wrap {
     margin-bottom: 10px;
+    padding-right: 40px;
 }
 
 .store_wrap .store_cont .tit_wrap .tit {
@@ -3417,23 +3425,6 @@ button.swiper-pagination-bullet {
 
 .store_wrap .store_cont .more_wrap .more {
     margin-top: 0;
-}
-
-.store_wrap .store_cont .map {
-    position: relative;
-}
-
-.store_wrap .store_cont .map .pin {
-    display: block;
-    width: 20px;
-    height: 31px;
-    background-color: transparent;
-    background-image: url(/front/images/ico/ico_pin.png);
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    -webkit-background-size: 20px 31px;
-    background-size: 20px 31px;
-    z-index: 10;
 }
 
 .store_wrap .sub_head {
@@ -3595,18 +3586,40 @@ button.swiper-pagination-bullet {
     background: none;
 }
 
-.customer_top {
+.map {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.map .pin {
+    display: block;
+    width: 20px;
+    height: 31px;
+    background-color: transparent;
+    background-image: url(/front/images/ico/ico_pin.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -webkit-background-size: 20px 31px;
+    background-size: 20px 31px;
+    z-index: 10;
+}
+
+.customer_top,
+.kgc_top {
     padding: 15px 12px;
     background-color: #fff;
     border-bottom: 1px solid #eaeaea;
 }
 
-.customer_top .customer_search select {
+.customer_top .customer_search select,
+  .customer_top .kgc_search select,
+  .kgc_top .customer_search select,
+  .kgc_top .kgc_search select {
     border: 1px solid #eaeaea;
     height: 40px;
     line-height: 40px;
     width: 100%;
-    text-indent: 20px;
+    text-indent: 10px;
     background-color: transparent;
     background-image: url(/front/images/ico/ico_select.png);
     background-repeat: no-repeat;
@@ -3633,17 +3646,19 @@ button.swiper-pagination-bullet {
 .board_list li a {
     display: block;
     padding: 16px 12px 14px;
-    font-size: 0.857em;
+    font-size: 13px;
     color: #333;
 }
 
 .board_list li .noti {
     display: inline-block;
     height: 15px;
-    padding: 0 3px;
+    padding: 3px 3px 1px;
     margin-right: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     font-size: 10px;
-    line-height: 15px;
+    line-height: 100%;
     color: #fff;
     vertical-align: middle;
     background-color: #d71921;
@@ -3698,17 +3713,17 @@ button.swiper-pagination-bullet {
 
 .board_top {
     margin-top: 20px;
-    padding: 18px 12px 15px;
+    padding: 15px 12px 13px;
     border-top: 1px solid #d0d0d0;
     background-color: #f8f8f8;
 }
 
 .board_top .tit {
-    font-size: 0.857em;
+    font-size: 1em;
 }
 
 .board_top .date {
-    font-size: 10px;
+    font-size: 11px;
     color: #999;
 }
 
@@ -3721,6 +3736,37 @@ button.swiper-pagination-bullet {
     padding: 0 12px;
     font-size: 0.857em;
     color: #666;
+}
+
+.board_foot {
+    width: 100%;
+    font-size: 1em;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.board_foot th {
+    width: 70px;
+    color: #000;
+    color: #666;
+    font-weight: normal;
+    text-align: center;
+}
+
+.board_foot td a {
+    display: block;
+    width: 200px;
+    white-space: nowrap;
+    line-height: 1.4;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.board_foot th, .board_foot td {
+    padding: 14px 0;
+    border-bottom: 1px solid #d0d0d0;
 }
 
 .event_list li {
@@ -3832,6 +3878,7 @@ button.swiper-pagination-bullet {
 
 .sample_detail .ck_list li .sample_rao .sample_inner {
     display: block;
+    height: 174px;
 }
 
 .sample_detail .ck_list li input[type=radio] {
@@ -3923,6 +3970,87 @@ button.swiper-pagination-bullet {
 
 .kgc_info .ci_info_box.mt0 {
     margin-top: 0;
+}
+
+.kgc_business .busi_top {
+    position: relative;
+    padding: 13px 12px 11px;
+    font-size: 1.143em;
+    background-color: #f8f8f8;
+}
+
+.kgc_business .busi_top .btn_back {
+    height: 14px;
+    line-height: 14px;
+    padding-left: 15px;
+    font-size: 1em;
+    color: #d71921;
+    position: absolute;
+    left: auto;
+    top: 19px;
+    right: 12px;
+    bottom: auto;
+    z-index: 30;
+    background-color: transparent;
+    background-image: url(/front/images/ico/btn_back.png);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    -webkit-background-size: 7px 12px;
+    background-size: 7px 12px;
+}
+
+.kgc_business .busi_list li {
+    margin: 0 0 30px;
+}
+
+.kgc_business .busi_list li a {
+    display: block;
+}
+
+.kgc_business .busi_list li a .tit_wrap {
+    padding: 13px 12px 12px;
+    background-color: #f8f8f8;
+    background-image: url("/front/images/ico/ico_kgc_busi.jpg");
+    -webkit-background-size: 35px 35px;
+    background-size: 35px;
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+}
+
+.kgc_business .busi_list li a .tit_wrap .tit {
+    font-size: 1.143em;
+    color: #333;
+}
+
+.kgc_business .busi_list li .dsc_in {
+    padding: 13px 12px 0;
+}
+
+.kgc_business .busi_list li .dsc_in dl {
+    position: relative;
+}
+
+.kgc_business .busi_list li .dsc_in dl dt, .kgc_business .busi_list li .dsc_in dl dd {
+    font-size: 0.857em;
+}
+
+.kgc_business .busi_list li .dsc_in dl dt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    z-index: 30;
+    color: #999;
+}
+
+.kgc_business .busi_list li .dsc_in dl dd {
+    padding-left: 52px;
+    color: #666;
+}
+
+.kgc_business .busi_list li .dsc_in dl + dl {
+    margin-top: 10px;
 }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuLi9jc3Mva2djLmFsbC5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
