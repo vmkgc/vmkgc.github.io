@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/jquery-ui.1.10.3.css">
 	<link rel="stylesheet" type="text/css" href="/css/kgc.all.css">
 	<script src="/js/polyfill.js"></script>
-	<!-- <script src="/js/jquery.js"></script> -->
+	<script src="/js/jquery.js"></script>
 	
 	<script src="/js/ui.kgc.js"></script>
 </head>
@@ -174,8 +174,42 @@
 	<div class="category-detail">
 
 		<!-- 등록된 상품 이미지 : s -->
-		<div class="img-wrap">
-			<span class="img" style="background-image: url('/images/temp/product_detail_img.png');"></span>
+		<div class="product-slide">
+			<!-- Slider main container -->
+			<div class="swiper-container">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+			        <!-- Slides -->
+			        
+					<div class="swiper-slide">
+						<img src="/images/temp/product_detail_img.png" alt="비주얼 이미지">
+					</div>
+					
+					<div class="swiper-slide">
+						<img src="/images/temp/product_detail_img.png" alt="비주얼 이미지">
+					</div>
+					
+					<div class="swiper-slide">
+						<img src="/images/temp/product_detail_img.png" alt="비주얼 이미지">
+					</div>
+					
+					<div class="swiper-slide">
+						<img src="/images/temp/product_detail_img.png" alt="비주얼 이미지">
+					</div>
+					
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination">
+					<!-- 자동생성 -->
+				</div>
+
+				<!-- If we need navigation buttons -->
+				<!-- <div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div> -->
+
+				<!-- If we need scrollbar -->
+				<!-- <div class="swiper-scrollbar"></div> -->
+			</div>
 		</div>
 		<!-- 등록된 상품 이미지 : e -->
 
@@ -737,6 +771,14 @@
 	</div>
 
 </div>
+
+<script>
+//메인비주얼
+ui.swiper.init('.product-slide .swiper-container', {
+	paginationClickable: false,
+	paginationType: 'bullets'
+});
+</script>
 
 	
 	<!-- footer : s -->
