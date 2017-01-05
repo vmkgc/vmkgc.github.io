@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>매장검색 | store | KGC</title>
+	<link rel="stylesheet" href="/css/jquery-ui.1.10.3.css">
+	<link rel="stylesheet" type="text/css" href="/css/kgc.all.css">
+	<script src="/js/polyfill.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/ui.kgc.js"></script>
+</head>
+
+<body class="h-100">
+
+	<!-- header : s -->
+	<header id="header">
+
+		<h1 id="ci"><a href="../main/index.html"><span class="blind">KGC인삼공사</span></a></h1>
+
+		<div class="util">
+
+			<a class="btn-navi"><span class="blind">메뉴 펼침</span></a>
+
+			<div class="etc">
+				<a href="#" class="btn-search"><span class="blind">검색</span></a>
+				<a href="../mypage/point.html" class="btn-mypage"><span class="blind">마이페이지</span></a>
+			</div>
+
+		</div>
+
+	</header>
+	<!-- header : e -->
+
+	
+			<!-- 검색 : s -->
+			<div class="search">
+				<h2>검색</h2>
+				<form action="../search/product.html" method="get" accept-charset="utf-8" class="search-form">
+					<input type="text" name="searchStr" value="" class="search-input" id="" placeholder="검색어를 입력하세요." maxlength="20">
+					<button type="submit"><span>검색</span></button>
+				</form>
+				<div class="popular-list">
+					<h2>인기검색어</h2>
+					<a href="#"><span>홍삼정 플러스</span></a>
+					<a href="#"><span>체험단</span></a>
+					<a href="#"><span>홍이장군</span></a>
+					<a href="#"><span>화애락</span></a>
+					<a href="#"><span>아이패스</span></a>
+					<a href="#"><span>천삼정</span></a>
+				</div>
+				<button type="button" class="btn-close"><span class="blind">닫기</span></button>
+			</div>
+			<!-- 검색 : e -->
+
+		<!-- navigation : s -->
+	<nav id="navi">
+
+		<ul class="util">
+			<li><a href="../mypage/login.html"><span>로그인</span></a></li>
+			<li><a href="#"><span>회원가입</span></a></li>
+			<li><a href="../etc/membersGuide.html"><span>멤버스안내</span></a></li>
+		</ul>
+
+		<ul class="navi-list">
+			<li class="active">
+				<a href="#">브랜드소개</a>
+				<ul class="navi-list-sub">
+					<li class="hasList">
+						<a href="#">정관장</a>
+						<ul class="navi-list-sub-02">
+							<li><a href="../brand/about.html">정관장이란?</a></li>
+							<li><a href="#">정관장 제품역사</a></li>
+							<li><a href="../brand/mission.html">브랜드 미션</a></li>
+						</ul>
+					</li>
+					<li><a href="#">굿베이스</a></li>
+					<li><a href="#">동인비</a></li>
+					<li><a href="#">지니펫</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">이벤트</a>
+				<ul class="navi-list-sub">
+					<li><a href="../event/event_list.html">진행중 이벤트</a></li>
+					<li><a href="../event/event_win_list.html">당첨자발표</a></li>
+					<li><a href="../event/smaple_dong.html">체험단신청</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">매장안내</a>
+				<ul class="navi-list-sub">
+					<li class="hasList">
+						<a href="#">매장검색</a>
+						<ul class="navi-list-sub-02">
+							<li><a href="../store/store_search.html">바로검색</a></li>
+							<li><a href="../store/store_search_nodata.html">결과없음</a></li>
+							<li><a href="../store/store_search_redata.html">재검색</a></li>
+							<li><a href="../store/store_search_area.html">지역검색</a></li>
+							<li><a href="../store/store_search_subway.html">지하철검색</a></li>
+						</ul>
+					</li>
+					<li class="hasList">
+						<a href="#">매장안내</a>
+						<ul class="navi-list-sub-02">
+							<li><a href="../store/store_searvice.html">매장서비스</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">고객센터</a>
+				<ul class="navi-list-sub">
+					<li><a href="../customer/qa_list.html">FAQ</a></li>
+					<li><a href="../customer/notice_list.html">공지사항</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">회사소개</a>
+				<ul class="navi-list-sub">
+					<li class="hasList">
+						<a href="#">KGC소개</a>
+						<ul class="navi-list-sub-02">
+							<li><a href="../company/kgc_info01.html">개요</a></li>
+							<li><a href="../company/kgc_info02.html">비전</a></li>
+							<li><a href="../company/kgc_info03.html">CI</a></li>
+						</ul>
+					</li>
+					<li class="hasList">
+						<a href="#">사업망소개</a>
+						<ul class="navi-list-sub-02">
+							<li><a href="../company/kgc_business.html">본사</a></li>
+							<li><a href="#">인삼창</a></li>
+							<li><a href="#">R&amp;D</a></li>
+							<li><a href="#">인재개발원</a></li>
+							<li><a href="#">영업지사</a></li>
+							<li><a href="#">원료사업소</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">인재채용</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">에러페이지</a>
+				<ul class="navi-list-sub">
+					<li><a href="../common/error404.html">404</a></li>
+					<li><a href="../common/error500.html">500</a></li>
+				</ul>
+			</li>
+		</ul>
+
+		<button type="button" class="btn-close"><span class="blind">닫기</span></button>
+	</nav>
+	<!-- navigation : e -->
+
+
+
+
+<div id="wrap">
+	<div class="sub-navi start-fade">
+		<ul>
+			<li class="active"><a href="../brand/store_search.html">매장검색</a></li>
+			<li><a href="../brand/store_services.html">매장서비스</a></li>
+		</ul>
+	</div>
+	<div class="store_wrap">
+		<div class="store_tab">
+			<ul>
+				<li><a href="store_search.html"><span>바로 검색</span></a></li>
+				<li class="on"><a href="store_search_area.html"><span>지역검색</span></a></li>
+				<li><a href="store_search_subway.html"><span>지하철검색</span></a></li>
+			</ul>
+		</div>
+		<div class="store_top">
+			<div class="cate_top"><a href="store_search_area02.html">서울 강남구</a></div>
+		</div>
+		<div class="store_cont">
+			<div class="store_detail">
+				<div class="tit_wrap">
+					<p class="tit">서울 롯데코엑스면세점</p>
+					<span class="cate cate01">면세점</span>
+				</div>
+				<div class="dsc_in">
+					<dl>
+						<dt>도로명</dt>
+						<dd>서울특별시 강남구 봉은사로 524 인터컨티넨탈 서울 코엑스 인터컨티넨탈 호텔 B2F</dd>
+					</dl>
+					<dl>
+						<dt>지번</dt>
+						<dd>삼성동 159번지 코엑스 인터컨티넨탈 호텔 B2F</dd>
+					</dl>
+					<dl>
+						<dt>전화번호</dt>
+						<dd>02-500-5025</dd>
+					</dl>
+					<dl>
+						<dt>영업시간</dt>
+						<dd>09:00 ~ 21:00</dd>
+					</dl>
+					<dl>
+						<dt>지하철역</dt>
+						<dd><span class="ico_sy"><img src="/images/ico/ico_subway02.png" alt=""></span>2호선 역삼역</dd>
+					</dl>
+					<dl>
+						<dt>매장서비스</dt>
+						<dd>추출서비스 / 택배서비스</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="map">
+				<img src="/images/temp/temp_map.jpg" alt="">
+				<span class="pin" style="position: absolute;left:200px;top:100px;"></span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	
+	<!-- footer : s -->
+	<footer id="footer">
+		
+		<ul class="foot-menu">
+			<li><a href="../etc/membersGuide.html"><span>멤버스안내</span></a></li>
+			<li><a href="../etc/terms.html"><span>이용약관</span></a></li>
+			<li><a href="#"><span>개인정보 처리방침</span></a></li>
+		</ul>
+
+		<div class="foot-btn-group">
+			<a href="#" class="foot-btn"><span>온라인 쇼핑몰</span></a>
+			<a href="#" class="foot-btn"><span>PC버전 보기</span></a>
+		</div>
+
+		<address>
+			<span class="addr">주소 : 대전광역시 대덕구 벛꽃길 71(평촌동)<br>고객상담실 : 1588-2304 / 080-041-0303</span>
+			<span class="copyright">COPYRIGHT 2016 BY korea ginseng corp.<br>all rights reserved.</span>
+		</address>
+
+	</footer>
+	<!-- footer : e -->
+
+		
+	<div class="floating">
+		
+		<button class="to-top" type="button"><span class="blind">위로가기</span></button>
+
+		<div class="floating-menu">
+			<ul>
+				<li>
+					<a href="../main/index.html">
+						<i><span class="blind">아이콘</span></i>
+						<span>홈</span>
+					</a>
+				</li>
+				<li>
+					<a href="/html/common/category.html">
+						<i><span class="blind">아이콘</span></i>
+						<span>카테고리</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i><span class="blind">아이콘</span></i>
+						<span>이벤트</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i><span class="blind">아이콘</span></i>
+						<span>매장찾기</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+	</div>	
+
+</body>
+</html>

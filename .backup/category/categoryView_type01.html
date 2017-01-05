@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>상세 | 타입01 | 카테고리 | KGC</title>
+	<link rel="stylesheet" href="/css/jquery-ui.1.10.3.css">
+	<link rel="stylesheet" type="text/css" href="/css/kgc.all.css">
+	<script src="/js/polyfill.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/ui.kgc.js"></script>
+</head>
+
+<body class="h-100">
+
+	<!-- header : s -->
+	<header id="header">
+
+		<h1 id="ci"><a href="../main/index.html"><span class="blind">KGC인삼공사</span></a></h1>
+
+		<div class="util">
+
+			<a class="btn-navi"><span class="blind">메뉴 펼침</span></a>
+
+			<div class="etc">
+				<a href="#" class="btn-search"><span class="blind">검색</span></a>
+				<a href="../mypage/point.html" class="btn-mypage"><span class="blind">마이페이지</span></a>
+			</div>
+
+		</div>
+
+	</header>
+	<!-- header : e -->
+
+	
+			<!-- 검색 : s -->
+			<div class="search">
+				<h2>검색</h2>
+				<form action="../search/product.html" method="get" accept-charset="utf-8" class="search-form">
+					<input type="text" name="searchStr" value="" class="search-input" id="" placeholder="검색어를 입력하세요." maxlength="20">
+					<button type="submit"><span>검색</span></button>
+				</form>
+				<div class="popular-list">
+					<h2>인기검색어</h2>
+					<a href="#"><span>홍삼정 플러스</span></a>
+					<a href="#"><span>체험단</span></a>
+					<a href="#"><span>홍이장군</span></a>
+					<a href="#"><span>화애락</span></a>
+					<a href="#"><span>아이패스</span></a>
+					<a href="#"><span>천삼정</span></a>
+				</div>
+				<button type="button" class="btn-close"><span class="blind">닫기</span></button>
+			</div>
+			<!-- 검색 : e -->
+
+		<!-- navigation : s -->
+	<nav id="navi">
+
+		<ul class="util">
+			<li><a href="../mypage/login.html"><span>로그인</span></a></li>
+			<li><a href="#"><span>회원가입</span></a></li>
+			<li><a href="../etc/membersGuide.html"><span>멤버스안내</span></a></li>
+		</ul>
+
+		<ul class="navi-list">
+			<li class="active">
+				<a href="#">브랜드소개</a>
+				<ul class="navi-list-sub">
+					<li class="hasList">
+						<a href="#">정관장</a>
+						<ul class="navi-list-sub-02">
+							<li><a href="../brand/about.html">정관장이란?</a></li>
+							<li><a href="#">정관장 제품역사</a></li>
+							<li><a href="../brand/mission.html">브랜드 미션</a></li>
+						</ul>
+					</li>
+					<li><a href="#">굿베이스</a></li>
+					<li><a href="#">동인비</a></li>
+					<li><a href="#">지니펫</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">이벤트</a>
+				<ul class="navi-list-sub">
+					<li><a href="../event/event_list.html">진행중 이벤트</a></li>
+					<li><a href="../event/event_win_list.html">당첨자발표</a></li>
+					<li><a href="../event/smaple_dong.html">체험단신청</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">매장안내</a>
+				<ul class="navi-list-sub">
+					<li class="hasList">
+						<a href="#">매장검색</a>
+						<ul class="navi-list-sub-02">
+							<li><a href="../store/store_search.html">바로검색</a></li>
+							<li><a href="../store/store_search_nodata.html">결과없음</a></li>
+							<li><a href="../store/store_search_redata.html">재검색</a></li>
+							<li><a href="../store/store_search_area.html">지역검색</a></li>
+							<li><a href="../store/store_search_subway.html">지하철검색</a></li>
+						</ul>
+					</li>
+					<li class="hasList">
+						<a href="#">매장안내</a>
+						<ul class="navi-list-sub-02">
+							<li><a href="../store/store_searvice.html">매장서비스</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">고객센터</a>
+				<ul class="navi-list-sub">
+					<li><a href="../customer/qa_list.html">FAQ</a></li>
+					<li><a href="../customer/notice_list.html">공지사항</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">회사소개</a>
+				<ul class="navi-list-sub">
+					<li class="hasList">
+						<a href="#">KGC소개</a>
+						<ul class="navi-list-sub-02">
+							<li><a href="../company/kgc_info01.html">개요</a></li>
+							<li><a href="../company/kgc_info02.html">비전</a></li>
+							<li><a href="../company/kgc_info03.html">CI</a></li>
+						</ul>
+					</li>
+					<li class="hasList">
+						<a href="#">사업망소개</a>
+						<ul class="navi-list-sub-02">
+							<li><a href="../company/kgc_business.html">본사</a></li>
+							<li><a href="#">인삼창</a></li>
+							<li><a href="#">R&amp;D</a></li>
+							<li><a href="#">인재개발원</a></li>
+							<li><a href="#">영업지사</a></li>
+							<li><a href="#">원료사업소</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">인재채용</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">에러페이지</a>
+				<ul class="navi-list-sub">
+					<li><a href="../common/error404.html">404</a></li>
+					<li><a href="../common/error500.html">500</a></li>
+				</ul>
+			</li>
+		</ul>
+
+		<button type="button" class="btn-close"><span class="blind">닫기</span></button>
+	</nav>
+	<!-- navigation : e -->
+
+
+
+<div id="wrap">
+
+	<!-- 서브메뉴 : s -->
+	<div class="sub-navi">
+		<ul>
+			<li class="active"><a href="#">뿌리삼</a></li>
+			<li><a href="#">달임액</a></li>
+			<li><a href="#">홍삼분</a></li>
+		</ul>
+	</div>
+	<!-- 서브메뉴 : e -->
+
+	<div class="category-detail">
+
+		<!-- 등록된 상품 이미지 : s -->
+		<div class="img-wrap">
+			<span class="img" style="background-image: url('/images/temp/product_detail_img.png');"></span>
+		</div>
+		<!-- 등록된 상품 이미지 : e -->
+
+		<!-- 상품정보 : s -->
+		<div class="product-info">
+			<div class="inner">
+				<h2 class="prod-name">천삼 15지 (600g)</h2>
+				<p class="txt">천삼은 상위 0.5% 수준의 최고급 홍삼으로 내부조직이 치밀하고 견고하며, 외형도 매우 우수합니다.</p>
+			</div>
+			<div class="etc-list">
+				<dl>
+					<dt>가격</dt>
+					<dd class="price">1,200,000원</dd>
+				</dl>
+				<dl>
+					<dt>용량</dt>
+					<dd>50g</dd>
+				</dl>
+			</div>
+			<ul class="how-to-dose">
+				<li class="frequency">1회 (90ml)</li>
+				<li class="taken-for-day">1일 1~3회</li>
+				<li class="take-time">식후 또는 시간</li>
+			</ul>
+			<p class="warn">개봉된 제품은 밀봉하여 냉장이나 냉동보관, 추출한 후에는 가능하면 빨리 섭취하시고 반드시 냉장보관 </p>
+		</div>
+		<!-- 상품정보 : e -->
+
+		<div class="btn-group inner">
+			<a href="#" class="btn normal">매장찾기</a>
+			<a href="#" class="btn red">공식몰 구매하기</a>
+		</div>
+
+        <div class="tab">
+			<ul>
+				<li class="active"><a href="javascript:ui.common.commonNothing();" class="tab1"><span>제품설명</span></a></li>
+				<li><a href="javascript:ui.common.commonNothing();" class="tab2"><span>추출방법</span></a></li>
+				<li><a href="javascript:ui.common.commonNothing();" class="tab3"><span>영양성분</span></a></li>
+			</ul>
+		</div>
+
+
+<!--
+***************** 여기서 부터 PC와 같은 컨텐츠 : s *****************
+-->
+        <!-- tab1 -->
+		<div class="tab_content" id="tab1">
+		<!-- ****************************************************************************************** -->
+				<div class="goods_content_info">
+					<!-- 상세제품설명 -->
+					<div class="goods_detail_info">
+
+
+						<div class="detail_top">
+							<!--  style1  -->
+							<!-- 제품설명 4가지 -->
+							<div class="container category_style1">
+								<div class="category_image">
+									<div class="img_contents01"></div>
+									<!-- <img src="../../front/images/contents/d000001/img_contents.jpg" alt="" />
+									<img src="/front/images/contents/d000001/img_contents.jpg" alt="" /> -->
+
+									<div class="image_txt">
+										<p class="title">100년 전통의<br/><span class="fc_red">홍삼정</span></p>
+										<p class="sub_txt">1912년부터 지금까지 사랑받아온<br/>정관장의 대표 제품입니다.</p>
+									</div>
+								</div>
+
+								<div>
+									<!-- type1 -->
+									<ul class="category_txt">
+										<li>
+											<span class="title">Since 1912</span>
+											<span class="line"></span>
+											<p class="sub_txt">100년 이상의 전통의 노하우와 정성으로 6년근 홍삼을 100% 달인 진액만 농축시킨 정관장의 대표 제품입니다.</p>
+										</li>
+										<li>
+											<span class="title">최상급 프리미엄</span>
+											<span class="line"></span>
+											<p class="sub_txt">홍삼 총 생산량 중 0.5%만 생출되는 최고급 천삼(天蔘)으로만 제조되는 최상급 홍삼농축액으로 제품 고유 일련번호로 관리됩니다.</p>
+										</li>
+										<li>
+											<span class="title">고품격 패키지</span>
+											<span class="line"></span>
+											<p class="sub_txt">장인들의 수작업으로 만들어지는 방짜유기 형태의 용기와 스푼을 사용하고 전통적인 나무상자로 포장되어 있습니다.</p>
+										</li>
+										<li>
+											<span class="title">홍삼 100%</span>
+											<span class="line"></span>
+											<p class="sub_txt">6년근 홍삼을 최적의 조건으로 추출, 농축하여 다양한 홍삼유효성분이 균형 있게 함유되어 있습니다.</p>
+										</li>
+									</ul>
+									<!-- //type1 -->
+
+									<!-- type2 -->
+									<ul class="category_txt type2">
+										<li>
+											<span class="title">천삼 <span>(天蔘)</span></span>
+											<span class="sub_title">0.5% 기적</span>
+											<span class="line"></span>
+											<p class="txt">하늘이 허락한 0.5%의 기적</p>
+											<p class="sub_txt">100년 이상의 전통의 노하우와 정성으로 6년근 홍삼을 100% 달인 진액만 농축시킨 정관장의 대표 제품입니다.</p>
+										</li>
+										<li>
+											<span class="title">천삼 <span>(天蔘)</span></span>
+											<span class="sub_title">0.5% 기적</span>
+											<span class="line"></span>
+											<p class="txt">하늘이 허락한 0.5%의 기적</p>
+											<p class="sub_txt">100년 이상의 전통의 노하우와 정성으로 6년근 홍삼을 100% 달인 진액만 농축시킨 정관장의 대표 제품입니다.</p>
+										</li>
+										<li>
+											<span class="title">천삼 <span>(天蔘)</span></span>
+											<span class="sub_title">0.5% 기적</span>
+											<span class="line"></span>
+											<p class="txt">하늘이 허락한 0.5%의 기적</p>
+											<p class="sub_txt">100년 이상의 전통의 노하우와 정성으로 6년근 홍삼을 100% 달인 진액만 농축시킨 정관장의 대표 제품입니다.</p>
+										</li>
+										<li>
+											<span class="title">천삼 <span>(天蔘)</span></span>
+											<span class="sub_title">0.5% 기적</span>
+											<span class="line"></span>
+											<p class="txt">하늘이 허락한 0.5%의 기적</p>
+											<p class="sub_txt">100년 이상의 전통의 노하우와 정성으로 6년근 홍삼을 100% 달인 진액만 농축시킨 정관장의 대표 제품입니다.</p>
+										</li>
+									</ul>
+									<!-- //type2 -->
+
+									<!-- 리스트가 3개일때-->
+									<!-- type2 -->
+									<ul class="category_txt type2 col3">
+										<li>
+											<span class="title">천삼 <span>(天蔘)</span></span>
+											<span class="sub_title">0.5% 기적</span>
+											<span class="line"></span>
+											<p class="txt">하늘이 허락한 0.5%의 기적</p>
+											<p class="sub_txt">100년 이상의 전통의 노하우와 정성으로 6년근 홍삼을 100% 달인 진액만 농축시킨 정관장의 대표 제품입니다.</p>
+										</li>
+										<li>
+											<span class="title">천삼 <span>(天蔘)</span></span>
+											<span class="sub_title">0.5% 기적</span>
+											<span class="line"></span>
+											<p class="txt">하늘이 허락한 0.5%의 기적</p>
+											<p class="sub_txt">100년 이상의 전통의 노하우와 정성으로 6년근 홍삼을 100% 달인 진액만 농축시킨 정관장의 대표 제품입니다.</p>
+										</li>
+										<li>
+											<span class="title">천삼 <span>(天蔘)</span></span>
+											<span class="sub_title">0.5% 기적</span>
+											<span class="line"></span>
+											<p class="txt">하늘이 허락한 0.5%의 기적</p>
+											<p class="sub_txt">100년 이상의 전통의 노하우와 정성으로 6년근 홍삼을 100% 달인 진액만 농축시킨 정관장의 대표 제품입니다.</p>
+										</li>
+									</ul>
+									<!-- //type2 -->
+									<!-- //리스트가 3개일때-->
+								</div>
+							</div>
+							<!-- //제품설명 4가지 -->
+							<!-- //style1 -->
+
+
+							<!-- style2 -->
+							<!-- 홍이장군 & 아이패스 -->
+							<div class="container category_style2">
+								<div class="category_txt">
+									<p class="title">유아기부터 시작되는<br/>단계별 어린이 홍삼 프로젝트</p>
+									<p class="sub_txt">
+										아이들은 성장할 수록 필요한 건강요소가 달라지기 때문에 나이에 맞게 체력과 면역력을 차곡차곡 쌓아줘야 합니다.<br/>
+										정관장 홍이장군은 연령별로 필요한 성분을 더해 단계별로 설계되었습니다.
+									</p>
+								</div>
+								<div class="category_image">
+									<img src="../../images/contents/k000006/img_contents.jpg" alt="" />
+								</div>
+							</div>
+							<!-- //홍이장군 * 아이패스 -->
+							<!-- //style2 -->
+
+							<!-- style3 -->
+							<!-- 아이키커 -->
+							<div class="container category_style3">
+								<div class="category_txt">
+									<p class="title">어린이 홍삼<br/>과즙음료</p>
+									<p class="sub_txt">
+										아이들이 언제 어디서든 간편하게 즐길 수 있는 어린이 홍삼 과즙음료 "아이키커"
+									</p>
+								</div>
+								<div class="category_image">
+									<img src="../../images/contents/m000003/img_contents.jpg" alt="" />
+								</div>
+							</div>
+							<!-- //아이키커 -->
+							<!-- //style3 -->
+
+
+							<!-- style4 -->
+							<!-- 애브리타임 -->
+							<div class="container category_style4">
+								<div class="category_image">
+									<img src="../../images/contents/g000001/img_contents2.jpg" alt="" />
+								</div>
+							</div>
+							<!-- //애브리타임 -->
+							<!-- //style4 -->
+
+						</div>
+
+						<div class="detail_middle container">
+							<!-- 이런 분들에게 추천합니다. -->
+							<p class="h3title">이런 분들에게 추천합니다.</p>
+							<ul class="recommend_list">
+								<li>
+									<div class="icon_image_box"><span class="icon_image icon_type01"></span></div>
+									<div class="txt">
+										<p class="title">100% 홍삼</p>
+										<p class="sub_txt">100% 홍삼을 원하시는 분</p>
+									</div>
+								</li>
+								<li>
+									<div class="icon_image_box"><span class="icon_image icon_type02"></span></div>
+									<div class="txt">
+										<p class="title">홍삼 본연의 맛</p>
+										<p class="sub_txt">홍삼 본연의 깊고<br/>진한 풍미를 원하시는 분</p>
+									</div>
+								</li>
+								<li>
+									<div class="icon_image_box"><span class="icon_image icon_type03"></span></div>
+									<div class="txt">
+										<p class="title">고품격 선물</p>
+										<p class="sub_txt">고품격 선물을 하고자<br/>하시는 분</p>
+									</div>
+								</li>
+								<li class="icon_no_data">
+								</li>
+							</ul>
+							<!-- //이런 분들에게 추천합니다. -->
+						</div>
+
+
+						<!-- 이미지3 -->
+						<div class="container">
+
+							<ul class="contents_detail_img">
+								<li><img src="../../images/contents/d000001/img_detail1.jpg" alt="" /></li>
+								<li><img src="../../images/contents/d000001/img_detail2.jpg" alt="" /></li>
+								<li><img src="../../images/contents/d000001/img_detail3.jpg" alt="" /></li>
+							</ul>
+						</div>
+						<!-- //이미지3 -->
+					</div>
+					<!-- //상세제품설명 -->
+				</div>
+		<!-- ****************************************************************************************** -->
+			<!-- 판매처를 알려드립니다. -->
+			<div class="container mt70">
+				<p class="h3title bd1">판매처를 알려드립니다.</p>
+				<ul class="store_list">
+					<li>
+						<span class="icon_store store1"></span>
+						<p class="sub_txt">로드샵</p>
+					</li>
+					<li class="on">
+						<span class="icon_store store2"></span>
+						<p class="sub_txt">백화점</p>
+					</li>
+					<li>
+						<span class="icon_store store3"></span>
+						<p class="sub_txt">마트</p>
+					</li>
+					<li class="on">
+						<span class="icon_store store4"></span>
+						<p class="sub_txt">공식몰</p>
+					</li>
+					<li>
+						<span class="icon_store store5"></span>
+						<p class="sub_txt">홈쇼핑</p>
+					</li>
+					<li class="on">
+						<span class="icon_store store6"></span>
+						<p class="sub_txt">면세점</p>
+					</li>
+					<li>
+						<span class="icon_store store7"></span>
+						<p class="sub_txt">기타</p>
+					</li>
+				</ul>
+			</div>
+			<!-- //판매처를 알려드립니다. -->
+			<div class="dietary_method">
+				<div class="innner">
+					<h3>홍삼뿌리 섭취법</h3>
+					<p class="txt">홍삼뿌리 섭취하는 방법을 알려드립니다.</p>
+					<div class="inner">
+						<iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/S_7etz-NwsM" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- //tab1 -->
+
+		<!-- tab2 -->
+		<div class="tab_content" id="tab2" style="display:none">
+			<div class="inner">
+				<h3>홍삼뿌리 섭취법</h3>
+				<p class="txt">
+					추출액은 1일 1~3회 약 90ml씩 따뜻한 상태로 섭취하며,장기간
+					섭취 할수록 효과가 좋습니다.
+					정관장 매장에 설치된 홍삼 추출기로 달이시면 홍삼의 유효성분을
+					제대로 추출할 수 있습니다.(유료 서비스)
+				</p>
+				<p class="txt3">직접 홍삼뿌리를 달이시는 경우 참조하세요!</p>
+
+				<p class="h4">사용량</p>
+				<table class="tbl">
+					<thead>
+						<tr>
+							<th style="width:55px" class="th2">구분</th>
+							<th>단위</th>
+							<th>10지</th>
+							<th>15지</th>
+							<th>20지</th>
+							<th>30지</th>
+							<th>40지</th>
+							<th>절삼</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="th">단기간<br/>섭취</td>
+							<td>뿌리</td>
+							<td>1.5</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>8~9쪽</td>
+						</tr>
+						<tr>
+							<td class="th">상시 섭취</td>
+							<td>뿌리</td>
+							<td colspan="6">단기간 섭취량의 1/3 정도</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p class="h4">사용량(예시)</p>
+				<table class="tbl tbl2 row">
+					<tbody>
+						<tr>
+							<th>홍삼(g)</th>
+							<td>100</td>
+							<td>200</td>
+							<td>300</td>
+						</tr>
+						<tr>
+							<th>물의양(ml)</th>
+							<td>2,000</td>
+							<td>4,000</td>
+							<td>5,700</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="txt2">
+				 	<p>물의 양은 홍삼의 약 20배량으로 계산하시면 됩니다.</p>
+				 	<p>홍삼은 매우 단단하므로, 홍삼을 물에 살짝 적시거나, 물 스프레이로 뿌려 전자레인지에 약 1분간 가열한 후 약 2cm크기로 절단하여 추출 하시면 좋습니다.</p>
+				</div>
+
+			</div>
+
+		</div>
+		<!-- tab2 -->
+
+		<!-- tab3 -->
+		<div class="tab_content" id="tab3" style="display:none">
+			<div class="inner">
+				<h3>영양성분</h3>
+				<table class="tbl">
+					<thead>
+						<tr>
+							<th class="th2" style="width:30%">1회 섭취량 당</th>
+							<th>함량</th>
+							<th>%영양소 기준치</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="th">영량</td>
+							<td>50Kcal</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="th">탄수화물</td>
+							<td>12g</td>
+							<td>4%</td>
+						</tr>
+						<tr>
+							<td class="th">당류</td>
+							<td>7g</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="th">단백질</td>
+							<td>1g 미만</td>
+							<td>1%</td>
+						</tr>
+						<tr>
+							<td class="th">지방</td>
+							<td>0g</td>
+							<td>0%</td>
+						</tr>
+						<tr>
+							<td class="th">나트륨</td>
+							<td>5mg</td>
+							<td>0%</td>
+						</tr>
+						<tr>
+							<td class="th">기능성분 또는<br/>지표성분</td>
+							<td colspan="2">진세노사이드 Rg1+Rb1+Rg3  10mg</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="tbl tbl2 row mt20">
+					<tbody>
+						<tr>
+							<th style="width:30%">유전자변형<br/>농산물표시</th>
+							<td>해당사항 없음</td>
+						</tr>
+						<tr>
+							<th>지리적 표시</th>
+							<td>등록</td>
+						</tr>
+						<tr>
+							<th>지리적 표시</th>
+							<td>등록</td>
+						</tr>
+						<tr>
+							<th>상품 구성</th>
+							<td>홍삼</td>
+						</tr>
+						<tr>
+							<th>보관방법 및<br/>취급방법</th>
+							<td>통풍이 잘되는건조하고 서늘한 장소에 보관, 개봉 후 고온, 다습한 곳에 두면 곰팡이가 발생될 수 있으므로 반드시 밀봉하여 냉장보관</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- tab3 -->
+
+        <!--
+        ***************** 여기서 부터 PC와 같은 컨텐츠 : e *****************
+        -->
+
+		<div class="related-goods">
+			<h3 class="tit">관련제품</h3>
+			<ul class="item-list">
+				<li>
+					<a href="#">
+						<span class="thumb">
+							<img src="../../images/temp/prod_thumb.png" alt="제품 썸네일">
+						</span>
+						<span class="info">
+							<strong>홍삼정 로얄 (260g)</strong>
+							<p class="txt">6년근 홍삼을 최적의 조건으로 추출,농축하여 다양한 홍삼유효성분이 함유되 있어 피로획복 탁월한 효과가 있습니다.</p>
+							<span class="price">240,000원</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="thumb">
+							<img src="../../images/temp/prod_thumb.png" alt="제품 썸네일">
+						</span>
+						<span class="info">
+							<strong>홍삼정 로얄 (260g)</strong>
+							<p class="txt">6년근 홍삼을 최적의 조건으로 추출,농축하여 다양한 홍삼유효성분이 함유되 있어 피로획복 탁월한 효과가 있습니다.</p>
+							<span class="price">240,000원</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="thumb">
+							<img src="../../images/temp/prod_thumb.png" alt="제품 썸네일">
+						</span>
+						<span class="info">
+							<strong>홍삼정 로얄 (260g)</strong>
+							<p class="txt">6년근 홍삼을 최적의 조건으로 추출,농축하여 다양한 홍삼유효성분이 함유되 있어 피로획복 탁월한 효과가 있습니다.</p>
+							<span class="price">240,000원</span>
+						</span>
+					</a>
+				</li>
+			</ul>
+			<p class="add-txt r">소비자상담 전화 <a href="tel:15882304">1588-2304</a></p>
+		</div>
+
+<script>
+$(document).ready(function(){
+
+    $('.tab li a').on('click', function(){
+        $('.tab li').removeClass('active');
+        $(this).parent().addClass('active');
+        $('.tab_content').hide();
+        var id = $(this).attr("class");
+        $("#"+id).show();
+    });
+});
+</script>
+
+		<!-- <div class="related-goods">
+			<h3 class="tit">관련제품</h3>
+			<ul class="item-list">
+				<li>
+					<a href="#">
+						<span class="thumb">
+							<img src="/images/temp/prod_thumb.png" alt="제품 썸네일">
+						</span>
+						<span class="info">
+							<strong>홍삼정 로얄 (260g)</strong>
+							<p class="txt">6년근 홍삼을 최적의 조건으로 추출,농축하여 다양한 홍삼유효성분이 함유되 있어 피로획복 탁월한 효과가 있습니다.</p>
+							<span class="price">240,000원</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="thumb">
+							<img src="/images/temp/prod_thumb.png" alt="제품 썸네일">
+						</span>
+						<span class="info">
+							<strong>홍삼정 로얄 (260g)</strong>
+							<p class="txt">6년근 홍삼을 최적의 조건으로 추출,농축하여 다양한 홍삼유효성분이 함유되 있어 피로획복 탁월한 효과가 있습니다.</p>
+							<span class="price">240,000원</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="thumb">
+							<img src="/images/temp/prod_thumb.png" alt="제품 썸네일">
+						</span>
+						<span class="info">
+							<strong>홍삼정 로얄 (260g)</strong>
+							<p class="txt">6년근 홍삼을 최적의 조건으로 추출,농축하여 다양한 홍삼유효성분이 함유되 있어 피로획복 탁월한 효과가 있습니다.</p>
+							<span class="price">240,000원</span>
+						</span>
+					</a>
+				</li>
+			</ul>
+			<p class="add-txt r">소비자상담 전화 <a href="tel:15882304">1588-2304</a></p>
+		</div> -->
+
+	</div>
+
+</div>
+
+	
+	<!-- footer : s -->
+	<footer id="footer">
+		
+		<ul class="foot-menu">
+			<li><a href="../etc/membersGuide.html"><span>멤버스안내</span></a></li>
+			<li><a href="../etc/terms.html"><span>이용약관</span></a></li>
+			<li><a href="#"><span>개인정보 처리방침</span></a></li>
+		</ul>
+
+		<div class="foot-btn-group">
+			<a href="#" class="foot-btn"><span>온라인 쇼핑몰</span></a>
+			<a href="#" class="foot-btn"><span>PC버전 보기</span></a>
+		</div>
+
+		<address>
+			<span class="addr">주소 : 대전광역시 대덕구 벛꽃길 71(평촌동)<br>고객상담실 : 1588-2304 / 080-041-0303</span>
+			<span class="copyright">COPYRIGHT 2016 BY korea ginseng corp.<br>all rights reserved.</span>
+		</address>
+
+	</footer>
+	<!-- footer : e -->
+
+		
+	<div class="floating">
+		
+		<button class="to-top" type="button"><span class="blind">위로가기</span></button>
+
+		<div class="floating-menu">
+			<ul>
+				<li>
+					<a href="../main/index.html">
+						<i><span class="blind">아이콘</span></i>
+						<span>홈</span>
+					</a>
+				</li>
+				<li>
+					<a href="/html/common/category.html">
+						<i><span class="blind">아이콘</span></i>
+						<span>카테고리</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i><span class="blind">아이콘</span></i>
+						<span>이벤트</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i><span class="blind">아이콘</span></i>
+						<span>매장찾기</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+	</div>	
+
+</body>
+</html>
