@@ -170,11 +170,23 @@
 		</ul>
 	</div>
 	<!-- 서브메뉴 : e -->
-
+	
+	<!-- 서브비주얼 구조 변경 : 2017-01-05 -->		
 	<!-- 서브 비주얼 : s -->
-	<!-- <div class="category-visual bg01">
+	<div class="category-visual bg01 toggle arrow">
 		<span class="blind">뿌리삼 비주얼 영역</span>
-	</div> -->
+		<span class="img-wrap"><img src="/images/sub/category_visual_01.jpg" alt="비주얼 영역 이미지"></span>
+		<p class="txt">
+			인삼종주국의 세계적인 홍삼 브랜드 정관장이<br>
+			엄격한 기준으로 선별한 홍삼을 뿌리째 귀하게 전해드리는<br>
+			최상급의 홍삼입니다.<br>
+			머리, 몸통, 다리의 완벽한 형태와 함께 치밀한 내부조직에<br>
+			꽉 찬 내용성분으로 최고급 홍삼의 기준이 되는 정관장 뿌리삼.
+		</p>
+		<button type="button" class="item-toggle">
+			<span class="blind">펼침</span>
+		</button>
+	</div>
 	<!-- 서브 비주얼 : e -->
 
 	<div class="category-list">
@@ -290,9 +302,21 @@
 document.addEventListener('DOMContentLoaded', function(){
 	//강제 링크 추가
 	document.querySelectorAll('a.product-info').forEach(function(el, i){
-		console.log(el.href);
 		el.href = '/html/category/categoryView_type01.html';
 	});
+});
+
+// 2017-01-05 삼품별 비주얼 영역 토글 기능 추가
+//상품별 비주얼 영역 설명 토글
+$('.category-visual button').on('click', function(){
+	var parents = $(this).parents('.category-visual');
+	if ( parents.hasClass('active') ) {
+		parents.removeClass('active')
+		.find('.txt').stop().slideUp(300, function(){});
+	} else {
+		parents.addClass('active')
+		.find('.txt').stop().slideDown(300, function(){});
+	}
 });
 </script>
 
