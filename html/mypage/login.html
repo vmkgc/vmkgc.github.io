@@ -5,12 +5,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title>로그인 | 마이페이지 | KGC</title>
-	<link rel="stylesheet" type="text/css" href="/css/jquery-ui.1.10.3.css">
-	<link rel="stylesheet" type="text/css" href="/css/kgc.all.css">
-	<script src="/js/polyfill.js"></script>
-	<script src="/js/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../css/jquery-ui.1.10.3.css">
+	<link rel="stylesheet" type="text/css" href="../../css/kgc.all.css">
+	<script src="../../js/polyfill.js"></script>
+	<script src="../../js/jquery.js"></script>
 	
-	<script src="/js/ui.kgc.js"></script>
+		<script src="http://localhost:35729/livereload.js"></script>
+	
+	<script src="../../js/ui.kgc.js"></script>
 </head>
 
 <body class="h-100">
@@ -40,7 +42,7 @@
 				<h2>검색</h2>
 				<form action="../search/product.html" method="get" accept-charset="utf-8" class="search-form">
 					<input type="text" name="searchStr" value="" class="search-input" id="" placeholder="검색어를 입력하세요." maxlength="20">
-					<button type="submit"><span>검색</span></button>
+					<button type="button"><span>검색</span></button>
 				</form>
 				<div class="popular-list">
 					<h2>인기검색어</h2>
@@ -54,6 +56,7 @@
 				<button type="button" class="btn-close"><span class="blind">닫기</span></button>
 			</div>
 			<!-- 검색 : e -->
+
 
 		<!-- navigation : s -->
 	<nav id="navi">
@@ -140,7 +143,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">인재채용</a>
+						<a href="../company/rightPeople.html">인재채용</a>
 					</li>
 				</ul>
 			</li>

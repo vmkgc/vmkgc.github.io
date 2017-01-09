@@ -26,7 +26,6 @@ this._delay(function(){n===this.counter&&this.refreshPositions(!s)})},_clear:fun
  *  jquery.ui.widget.js
  *  jquery.ui.mouse.js
  */
- console.log(jQuery);
 !function(a){
     function f(a,b){
         if(!(a.originalEvent.touches.length>1)){
