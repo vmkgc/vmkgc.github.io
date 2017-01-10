@@ -187,31 +187,42 @@
 	</div>
 	<div class="kgc_business">
 		<ul class="busi_list">
+			<!-- 2017-01-10 수정
+				li 하위레벨에 a태그로 감사져 있던 기존 html을 a태그를 벗겨내고 지도 버튼을 추가하는 것으로 수정
+			-->
 			<li>
-				<a href="kgc_map.html">
-					<div class="tit_wrap">
-						<p class="tit">서울본사</p>
-					</div>
-					<div class="dsc_in">
-						<dl>
-							<dt>도로명</dt>
-							<dd>서울특별시 강남구 봉은사로 524 인터컨티넨탈 서울 코엑스 인터컨티넨탈 호텔 B2F</dd>
-						</dl>
-						<dl>
-							<dt>지번</dt>
-							<dd>서울특별시 강남구 대치동 1002 KT&amp;G 타워</dd>
-						</dl>
-						<dl>
-							<dt>전화번호</dt>
-							<dd>1588-2304</dd>
-						</dl>
-					</div>
-				</a>
+				<div class="tit_wrap">
+					<p class="tit">서울본사</p>
+					<!-- 추가 된 부분 : s -->
+					<a href="kgc_map.html" class="btn-map">
+						<span class="blind">지도보기</span>
+					</a>
+					<!-- 추가 된 부분 : e -->
+				</div>
+				<div class="dsc_in">
+					<dl>
+						<dt>도로명</dt>
+						<dd>서울특별시 강남구 봉은사로 524 인터컨티넨탈 서울 코엑스 인터컨티넨탈 호텔 B2F</dd>
+					</dl>
+					<dl>
+						<dt>지번</dt>
+						<dd>서울특별시 강남구 대치동 1002 KT&amp;G 타워</dd>
+					</dl>
+					<dl>
+						<dt>전화번호</dt>
+						<dd>1588-2304</dd>
+					</dl>
+				</div>
 			</li>
 			<li>
 				<a href="kgc_map.html">
 					<div class="tit_wrap">
 						<p class="tit">대전본사</p>
+						<!-- 추가 된 부분 : s -->
+						<a href="kgc_map.html" class="btn-map">
+							<span class="blind">지도보기</span>
+						</a>
+						<!-- 추가 된 부분 : e -->
 					</div>
 					<div class="dsc_in">
 						<dl>
@@ -256,9 +267,9 @@
 	</footer>
 	<!-- footer : e -->
 
-		
+	
 	<div class="floating">
-		
+
 		<button class="to-top" type="button"><span class="blind">위로가기</span></button>
 
 		<div class="floating-menu">
@@ -270,19 +281,19 @@
 					</a>
 				</li>
 				<li>
-					<a href="/html/common/category.html">
+					<a href="../common/category.html">
 						<i><span class="blind">아이콘</span></i>
 						<span>카테고리</span>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="../event/event_list.html">
 						<i><span class="blind">아이콘</span></i>
 						<span>이벤트</span>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="../store/store_search.html">
 						<i><span class="blind">아이콘</span></i>
 						<span>매장찾기</span>
 					</a>
@@ -290,7 +301,8 @@
 			</ul>
 		</div>
 
-	</div>	
+	</div>
+
 
 </body>
 </html>

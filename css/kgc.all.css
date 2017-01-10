@@ -6147,23 +6147,33 @@ button.swiper-pagination-bullet {
     margin: 0 0 30px;
 }
 
-.kgc_business .busi_list li a {
-    display: block;
-}
-
-.kgc_business .busi_list li a .tit_wrap {
+.kgc_business .busi_list li .tit_wrap {
     padding: 13px 12px 12px;
     background-color: #f8f8f8;
-    background-image: url("/images/ico/ico_kgc_busi.jpg");
-    -webkit-background-size: 35px 35px;
-    background-size: 35px;
-    background-position: 95% 50%;
-    background-repeat: no-repeat;
+    position: relative;
 }
 
-.kgc_business .busi_list li a .tit_wrap .tit {
+.kgc_business .busi_list li .tit_wrap .tit {
     font-size: 16px;
     color: #333;
+}
+
+.kgc_business .busi_list li .tit_wrap a.btn-map {
+    display: block;
+    width: 60px;
+    height: 100%;
+    background-color: transparent;
+    background-image: url(/images/ico/ico_kgc_busi.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-size: 35px 35px;
+    background-size: 35px 35px;
+    position: absolute;
+    left: auto;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 30;
 }
 
 .kgc_business .busi_list li .dsc_in {
