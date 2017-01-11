@@ -4,7 +4,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="Author" content="KGC">
+	<meta name="description" content="한국인삼공사 공식홈페이지">
+	<link rel="canonical" href="http://kgc.co.kr">
 	<title>리스트 | 타입01 | 카테고리 | KGC</title>
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="../../css/jquery-ui.1.10.3.css">
 	<link rel="stylesheet" type="text/css" href="../../css/kgc.all.css">
 	<script src="../../js/polyfill.js"></script>
@@ -79,9 +83,9 @@
 							<li><a href="../brand/mission.html">브랜드 미션</a></li>
 						</ul>
 					</li>
-					<li><a href="#">굿베이스</a></li>
-					<li><a href="#">동인비</a></li>
-					<li><a href="#">지니펫</a></li>
+					<li><a href="../brand/goodBase.html">굿베이스</a></li>
+					<li><a href="../brand/donginbi.html">동인비</a></li>
+					<li><a href="../brand/ginipet.html">지니펫</a></li>
 				</ul>
 			</li>
 			<li>
@@ -89,7 +93,7 @@
 				<ul class="navi-list-sub">
 					<li><a href="../event/event_list.html">진행중 이벤트</a></li>
 					<li><a href="../event/event_win_list.html">당첨자발표</a></li>
-					<li><a href="../event/smaple_dong.html">체험단신청</a></li>
+					<li><a href="../event/sample_dong.html">체험단신청</a></li>
 				</ul>
 			</li>
 			<li>
@@ -108,7 +112,7 @@
 					<li class="hasList">
 						<a href="#">매장안내</a>
 						<ul class="navi-list-sub-02">
-							<li><a href="../store/store_searvice.html">매장서비스</a></li>
+							<li><a href="../store/store_services.html">매장서비스</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -173,22 +177,22 @@
 		</ul>
 	</div>
 	<!-- 서브메뉴 : e -->
-	
-	<!-- 서브비주얼 구조 변경 : 2017-01-05 -->		
+
+	<!-- 서브비주얼 구조 변경 : 2017-01-05 -->
 	<!-- 서브 비주얼 : s -->
 	<div class="category-visual bg01 toggle arrow">
 		<span class="blind">뿌리삼 비주얼 영역</span>
 		<span class="img-wrap">
 			<!-- background image로 변경 -->
 			<span class="img"></span>
-			<!-- <img src="../../images/sub/category_visual_01.jpg" alt="비주얼 영역 이미지"> -->	
+			<!-- <img src="../../images/sub/category_visual_01.jpg" alt="비주얼 영역 이미지"> -->
 		</span>
 		<p class="txt">
-			인삼종주국의 세계적인 홍삼 브랜드 정관장이<br>
-			엄격한 기준으로 선별한 홍삼을 뿌리째 귀하게 전해드리는<br>
-			최상급의 홍삼입니다.<br>
-			머리, 몸통, 다리의 완벽한 형태와 함께 치밀한 내부조직에<br>
-			꽉 찬 내용성분으로 최고급 홍삼의 기준이 되는 정관장 뿌리삼.
+            <span>인삼종주국의 세계적인 홍삼 브랜드 정관장이<br>
+                엄격한 기준으로 선별한 홍삼을 뿌리째 귀하게 전해드리는<br>
+                최상급의 홍삼입니다.<br>
+                머리, 몸통, 다리의 완벽한 형태와 함께 치밀한 내부조직에<br>
+                꽉 찬 내용성분으로 최고급 홍삼의 기준이 되는 정관장 뿌리삼.</span>
 		</p>
 		<button type="button" class="item-toggle">
 			<span class="blind">펼침</span>
@@ -313,18 +317,19 @@ document.addEventListener('DOMContentLoaded', function(){
 	});
 });
 
+// 2017-01-11 삭제 css로 대체
 // 2017-01-05 삼품별 비주얼 영역 토글 기능 추가
 //상품별 비주얼 영역 설명 토글
-$('.category-visual button').on('click', function(){
-	var parents = $(this).parents('.category-visual');
-	if ( parents.hasClass('active') ) {
-		parents.removeClass('active')
-		.find('.txt').stop().slideUp(300, function(){});
-	} else {
-		parents.addClass('active')
-		.find('.txt').stop().slideDown(300, function(){});
-	}
-});
+// $('.category-visual button').on('click', function(){
+// 	var parents = $(this).parents('.category-visual');
+// 	if ( parents.hasClass('active') ) {
+// 		parents.removeClass('active')
+// 		.find('.txt').stop().slideUp(300, function(){});
+// 	} else {
+// 		parents.addClass('active')
+// 		.find('.txt').stop().slideDown(300, function(){});
+// 	}
+// });
 </script>
 
 	

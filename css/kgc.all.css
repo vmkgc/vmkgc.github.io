@@ -145,7 +145,7 @@ h2 {
     font-family: "NanumBarunGothicBold", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
 }
 
-/* 
+/*
  body font default
   - size: 14px;
   - color: #666;
@@ -184,6 +184,11 @@ h2 {
 
 .c {
     text-align: center;
+}
+
+/* main color */
+.red {
+    color: #d71921;
 }
 
 /* padding */
@@ -365,7 +370,8 @@ button.full-btn.list-back strong {
 .toggle.plus button.item-toggle:before {
     width: 13px;
     height: 1px;
-    margin-left: -6px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 .toggle.plus button.item-toggle:after {
@@ -2432,14 +2438,15 @@ button.swiper-pagination-bullet {
 
 #main .kgc-product .list .item {
     display: inherit;
-    width: 151px;
-    margin: 0 3px 6px;
+    width: 48%;
+    margin: 0 1% 6px;
     background-color: #fff;
     border-bottom: 1px solid #dedede;
 }
 
 #main .kgc-product .list .item > a {
     display: block;
+    width: 100%;
     padding: 12px;
 }
 
@@ -2807,10 +2814,6 @@ button.swiper-pagination-bullet {
     height: 88px;
 }
 
-.members-list li .red {
-    color: #d71921;
-}
-
 .members-list li i, .members-list li p {
     display: table-cell;
     vertical-align: middle;
@@ -2870,9 +2873,10 @@ button.swiper-pagination-bullet {
     top: 0;
     left: 50%;
     background-image: url("/images/common/guide_grade_royalgold.png");
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     width: 61px;
     height: 65px;
-    margin-left: -30px;
     -webkit-background-size: 61px 65px;
     background-size: 61px 65px;
 }
@@ -2884,9 +2888,10 @@ button.swiper-pagination-bullet {
     top: 0;
     left: 50%;
     background-image: url("/images/common/guide_grade_gold.png");
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     width: 56px;
     height: 56px;
-    margin-left: -28px;
     -webkit-background-size: 56px 56px;
     background-size: 56px 56px;
 }
@@ -2898,9 +2903,10 @@ button.swiper-pagination-bullet {
     top: 0;
     left: 50%;
     background-image: url("/images/common/guide_grade_blue.png");
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     width: 56px;
     height: 56px;
-    margin-left: -28px;
     -webkit-background-size: 56px 56px;
     background-size: 56px 56px;
 }
@@ -2912,9 +2918,10 @@ button.swiper-pagination-bullet {
     top: 0;
     left: 50%;
     background-image: url("/images/common/guide_grade_green.png");
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     width: 56px;
     height: 56px;
-    margin-left: -28px;
     -webkit-background-size: 56px 56px;
     background-size: 56px 56px;
 }
@@ -2926,9 +2933,10 @@ button.swiper-pagination-bullet {
     top: 0;
     left: 50%;
     background-image: url("/images/common/guide_grade_orange.png");
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     width: 56px;
     height: 56px;
-    margin-left: -28px;
     -webkit-background-size: 56px 56px;
     background-size: 56px 56px;
 }
@@ -3106,42 +3114,36 @@ button.swiper-pagination-bullet {
     background-color: #f8f8f8;
 }
 
-.category-visual.bg01 .img-wrap .img {
-    background-color: transparent;
-    background-image: url(/images/contents/common/img_category01.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    -webkit-background-size: contain;
-    background-size: contain;
-}
-
-.category-visual.bg02 .img-wrap .img {
-    background-color: transparent;
-    background-image: url(/images/contents/common/img_category01.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    -webkit-background-size: contain;
-    background-size: contain;
-}
-
-.category-visual.bg03 .img-wrap .img {
-    background-color: transparent;
-    background-image: url(/images/contents/common/img_category01.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    -webkit-background-size: contain;
-    background-size: contain;
-}
-
 .category-visual .img-wrap {
-    height: 150px;
-    width: auto;
+    position: relative;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 45%;
 }
 
 .category-visual .img-wrap .img {
-    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+}
+
+.category-visual.bg01 .img-wrap .img {
+    background-image: url("/images/contents/common/img_category01.jpg");
+}
+
+.category-visual.bg02 .img-wrap .img {
+    background-image: url("/images/contents/common/img_category01.jpg");
+}
+
+.category-visual.bg03 .img-wrap .img {
+    background-image: url("/images/contents/common/img_category01.jpg");
 }
 
 .category-visual .txt {
@@ -3164,18 +3166,35 @@ button.swiper-pagination-bullet {
 
 @media only screen and (orientation: landscape) {
     .category-visual {
-        display: -webkit-box;
-        display: flex;
-        flex-wrap: wrap;
-        height: 150px;
+        display: table;
     }
 
     .category-visual .img-wrap, .category-visual .txt {
         width: 50%;
-        display: inherit;
+        float: left;
+    }
+
+    .category-visual .img-wrap {
+        padding-bottom: 23%;
     }
 
     .category-visual .txt {
+        display: block;
+        height: 0;
+        overflow: hidden;
+        position: relative;
+        padding: 0;
+        padding-bottom: 23%;
+    }
+
+    .category-visual .txt span {
+        padding: 20px 12px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
         overflow-y: auto;
     }
 
@@ -4939,7 +4958,8 @@ button.swiper-pagination-bullet {
     position: absolute;
     top: 60px;
     left: 50%;
-    margin-left: -54px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     border-left: 54px solid transparent;
     border-right: 54px solid transparent;
     border-bottom: 95px solid #d71921;
@@ -4973,7 +4993,8 @@ button.swiper-pagination-bullet {
     padding-top: 40px;
     top: 0;
     left: 50%;
-    margin-left: -60px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 .right-people .diagram dd li:nth-child(2) {
@@ -5203,6 +5224,296 @@ button.swiper-pagination-bullet {
     color: #fff;
     background-color: #666;
     padding: 8px 21px 6px;
+}
+
+/* 브랜드 - 굿베이스, 동인비, 지니펫 */
+.brand .visual {
+    width: 100%;
+    height: 550px;
+    margin: 0 auto;
+    text-align: center;
+    background-position: 50% 0;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.brand .visual-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.brand .visual .tit {
+    padding-top: 41px;
+    font-size: 20px;
+    font-family: "NanumBarunGothic", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
+}
+
+.brand .visual .sub-tit {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.brand .visual .txt {
+    font-size: 12px;
+    font-family: "NanumBarunGothicLight", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
+    line-height: 1.3;
+}
+
+.brand .visual a.btn-shortcuts {
+    font-size: 15px;
+    padding: 14px 24px 13px;
+    border-width: 1px;
+    border-style: solid;
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.brand .visual a.btn-shortcuts span:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 8px;
+    height: 8px;
+    margin-left: 7px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-top-style: solid;
+    border-right-style: solid;
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+}
+
+.brand.good-base .visual {
+    background-image: url("/images/sub/brand/bg_goodbase.jpg");
+}
+
+.brand.good-base .visual .tit {
+    font-family: "NanumBarunGothicBold", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
+}
+
+.brand.good-base .visual a.btn-shortcuts {
+    border-color: #333;
+}
+
+.brand.good-base .visual a.btn-shortcuts span:after {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+
+.brand.good-base article.description:nth-of-type(1):after {
+    background-image: url("/images/sub//brand/brand_goodbase_img_01.jpg");
+}
+
+.brand.good-base article.description:nth-of-type(2):after {
+    background-image: url("/images/sub//brand/brand_goodbase_img_02.jpg");
+}
+
+.brand.good-base article.description:nth-of-type(3):after {
+    background-image: url("/images/sub//brand/brand_goodbase_img_03.jpg");
+}
+
+.brand.donginbi .visual {
+    background-image: url("/images/sub/brand/bg_donginbi.jpg");
+    color: #fff;
+}
+
+.brand.donginbi .visual .tit {
+    margin-bottom: 13px;
+}
+
+.brand.donginbi .visual a.btn-shortcuts {
+    border-color: #fff;
+}
+
+.brand.donginbi .visual a.btn-shortcuts span:after {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+
+.brand.donginbi article.description:nth-of-type(1):after {
+    background-image: url("/images/sub//brand/brand_donginbi_img_01.jpg");
+}
+
+.brand.donginbi article.description:nth-of-type(2):after {
+    background-image: url("/images/sub//brand/brand_donginbi_img_02.jpg");
+}
+
+.brand.donginbi article.description:nth-of-type(3):after {
+    background-image: url("/images/sub//brand/brand_donginbi_img_03.jpg");
+}
+
+.brand.ginipet .visual {
+    background-image: url("/images/sub/brand/bg_ginipet.jpg");
+}
+
+.brand.ginipet article.description:nth-of-type(1):after {
+    background-image: url("/images/sub//brand/brand_ginipet_img_01.jpg");
+}
+
+.brand.ginipet article.description:nth-of-type(2):after {
+    background-image: url("/images/sub//brand/brand_ginipet_img_02.jpg");
+}
+
+.brand article.description {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 42px;
+}
+
+.brand article.description h3 {
+    font-size: 16px;
+}
+
+.brand article.description h3 > span {
+    display: block;
+}
+
+.brand article.description h3 u {
+    color: #d71921;
+    text-decoration: none;
+    border-bottom: 1px solid #d71921;
+}
+
+.brand article.description .txt {
+    margin-top: 16px;
+    margin-bottom: 26px;
+}
+
+.brand article.description:after {
+    content: '';
+    max-width: 100%;
+    height: 180px;
+    display: block;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.brand dl.icon-box {
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 42px 12px;
+}
+
+.brand dl.icon-box dt {
+    padding-bottom: 39px;
+    font-size: 16px;
+}
+
+.brand dl.icon-box dd ul {
+    font-size: 0;
+}
+
+.brand dl.icon-box dd ul li {
+    display: inline-block;
+    margin-left: 24px;
+}
+
+.brand dl.icon-box dd ul li:first-child {
+    margin-left: 0;
+}
+
+.brand dl.icon-box dd ul li:before {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-bottom: 9px;
+}
+
+.brand dl.icon-box dd ul li:nth-child(1):before {
+    background-color: #fff;
+    background-image: url(/images/ico/ico_book.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-size: 22px 25px;
+    background-size: 22px 25px;
+}
+
+.brand dl.icon-box dd ul li:nth-child(2):before {
+    background-color: #fff;
+    background-image: url(/images/ico/ico_berry.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-size: 25px 25px;
+    background-size: 25px 25px;
+}
+
+.brand dl.icon-box dd ul li:nth-child(3):before {
+    background-color: #fff;
+    background-image: url(/images/ico/ico_trophy.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-size: 27px 25px;
+    background-size: 27px 25px;
+}
+
+.brand dl.icon-box dd ul li strong {
+    display: block;
+    font-family: "NanumBarunGothic", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.brand dl.icon-box dd ul li p {
+    color: #666;
+    font-size: 11px;
+}
+
+.brand .proposition {
+    text-align: center;
+}
+
+.brand .proposition > h3 {
+    font-size: 16px;
+    padding-top: 41px;
+    padding-bottom: 42px;
+}
+
+.brand .proposition .list-item > h4 {
+    font-size: 12px;
+    color: #d71921;
+    margin-bottom: 8px;
+}
+
+.brand .proposition .list-item li {
+    position: relative;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #666;
+}
+
+.brand .proposition .list-item li:before {
+    content: '';
+    display: inline-block;
+    vertical-align: 3px;
+    width: 3px;
+    height: 3px;
+    background-color: #d71921;
+    margin-right: 6px;
+}
+
+.brand .proposition .list-item li:last-of-type {
+    margin-bottom: 41px;
+}
+
+.brand hr {
+    width: 25px;
+    display: block;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    margin: 24px auto 27px;
 }
 
 /**************************************************************************************
@@ -5658,7 +5969,8 @@ button.swiper-pagination-bullet {
     right: auto;
     bottom: auto;
     z-index: 30;
-    margin-left: -25px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 .store_wrap ul.store_flow li:nth-of-type(5):before {
@@ -5963,12 +6275,21 @@ button.swiper-pagination-bullet {
     margin-top: 20px;
 }
 
+.sample_detail {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
 .sample_detail .sub_h3 {
     font-family: "NanumBarunGothicBold", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
 }
 
 .sample_detail .sample_img {
     margin-top: 20px;
+}
+
+.sample_detail .sample_img img {
+    width: 100%;
 }
 
 .sample_detail .event_entry {
@@ -6012,12 +6333,7 @@ button.swiper-pagination-bullet {
     margin: 20px 6px 0 6px;
     display: block;
     padding-bottom: 22px;
-    background-color: transparent;
-    background-image: url(/images/common/icon_radio_off.png);
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
-    -webkit-background-size: 18px 18px;
-    background-size: 18px 18px;
+    position: relative;
 }
 
 .sample_detail .ck_list li .sample_rao .sample_inner {
@@ -6037,13 +6353,45 @@ button.swiper-pagination-bullet {
     z-index: 30;
 }
 
-.sample_detail .ck_list li input[type=radio]:checked + label {
-    background-color: transparent;
-    background-image: url(/images/common/icon_radio_on.png);
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
-    -webkit-background-size: 18px 18px;
-    background-size: 18px 18px;
+.sample_detail .ck_list li input[type=radio] + label:after, .sample_detail .ck_list li input[type=radio] + label:before {
+    content: '';
+    display: block;
+}
+
+.sample_detail .ck_list li input[type=radio] + label:after {
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    border: 1px solid #d7d7d7;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    z-index: 30;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.sample_detail .ck_list li input[type=radio] + label:before {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: auto;
+    right: auto;
+    bottom: 5px;
+    z-index: 30;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.sample_detail .ck_list li input[type=radio]:checked + label:before {
+    background-color: #d71921;
 }
 
 .extand {
