@@ -428,6 +428,42 @@ button.full-btn.list-back strong {
     transition: 0.3;
 }
 
+/* select box */
+.select-wrap {
+    padding: 15px 12px;
+    position: relative;
+}
+
+.select-wrap select {
+    border: 1px solid #eaeaea;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    text-indent: 10px;
+    background-color: #fff;
+}
+
+.select-wrap:after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-top: 2px solid #696969;
+    border-right: 2px solid #696969;
+    -webkit-transform: rotateZ(135deg) translate(-75%, 0);
+    transform: rotateZ(135deg) translate(-75%, 0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    position: absolute;
+    left: auto;
+    top: 50%;
+    right: 28px;
+    bottom: auto;
+    z-index: 30;
+}
+
 /* overflow 가능하게 만들기 */
 .overthrow {
     overflow: hidden;
@@ -2998,6 +3034,36 @@ button.swiper-pagination-bullet {
 }
 
 /* 기타 - 이용약관 */
+.terms {
+  /* 수정 내용 : s */
+  /* 수정 내용 : e */;
+}
+
+.terms .privacy_txt {
+    border: 1px solid #eaeaea;
+    padding: 12px;
+    margin: 15px 12px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.terms .privacy_txt .title {
+    font-size: 14px;
+    font-family: "NanumBarunGothicBold", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
+    margin-bottom: 10px;
+}
+
+.terms .privacy_txt .sub_txt {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.terms .privacy_txt .big_title {
+    font-size: 16px;
+    font-family: "NanumBarunGothicBold", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
+    margin-bottom: 10px;
+}
+
 .terms .enforcement {
     font-family: "NanumBarunGothic", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
     font-size: 14px;
@@ -3728,7 +3794,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents01.jpg);
+    background-image: url(/images/contents/common/img_contents01.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -3740,7 +3806,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents02.jpg);
+    background-image: url(/images/contents/common/img_contents02.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -3752,7 +3818,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents03.jpg);
+    background-image: url(/images/contents/common/img_contents03.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -3764,7 +3830,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents04.jpg);
+    background-image: url(/images/contents/common/img_contents04.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -3776,7 +3842,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents05.jpg);
+    background-image: url(/images/contents/common/img_contents05.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -3788,7 +3854,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents06.jpg);
+    background-image: url(/images/contents/common/img_contents06.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -3800,7 +3866,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents07.jpg);
+    background-image: url(/images/contents/common/img_contents07.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -3812,7 +3878,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents08.jpg);
+    background-image: url(/images/contents/common/img_contents08.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -3824,7 +3890,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents09.jpg);
+    background-image: url(/images/contents/common/img_contents09.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -3836,7 +3902,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents10.jpg);
+    background-image: url(/images/contents/common/img_contents10.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -3848,7 +3914,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents11.jpg);
+    background-image: url(/images/contents/common/img_contents11.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -3860,7 +3926,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents12.jpg);
+    background-image: url(/images/contents/common/img_contents12.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -3872,7 +3938,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents13.jpg);
+    background-image: url(/images/contents/common/img_contents13.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -3884,7 +3950,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents14.jpg);
+    background-image: url(/images/contents/common/img_contents14.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -3896,7 +3962,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents15.jpg);
+    background-image: url(/images/contents/common/img_contents15.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -3908,7 +3974,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents16.jpg);
+    background-image: url(/images/contents/common/img_contents16.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -3920,7 +3986,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents17.jpg);
+    background-image: url(/images/contents/common/img_contents17.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -3932,7 +3998,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents18.jpg);
+    background-image: url(/images/contents/common/img_contents18.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -3944,7 +4010,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents19.jpg);
+    background-image: url(/images/contents/common/img_contents19.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -3956,7 +4022,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents20.jpg);
+    background-image: url(/images/contents/common/img_contents20.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -3968,7 +4034,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents21.jpg);
+    background-image: url(/images/contents/common/img_contents21.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -3980,7 +4046,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents22.jpg);
+    background-image: url(/images/contents/common/img_contents22.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -3992,7 +4058,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents23.jpg);
+    background-image: url(/images/contents/common/img_contents23.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -4004,7 +4070,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents24.jpg);
+    background-image: url(/images/contents/common/img_contents24.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -4016,7 +4082,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents25.jpg);
+    background-image: url(/images/contents/common/img_contents25.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -4028,7 +4094,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents26.jpg);
+    background-image: url(/images/contents/common/img_contents26.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -4040,7 +4106,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents27.jpg);
+    background-image: url(/images/contents/common/img_contents27.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -4052,7 +4118,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents28.jpg);
+    background-image: url(/images/contents/common/img_contents28.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -4064,7 +4130,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents29.jpg);
+    background-image: url(/images/contents/common/img_contents29.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -4076,7 +4142,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents30.jpg);
+    background-image: url(/images/contents/common/img_contents30.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -4088,7 +4154,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents31.jpg);
+    background-image: url(/images/contents/common/img_contents31.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -4100,7 +4166,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents32.jpg);
+    background-image: url(/images/contents/common/img_contents32.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -4112,7 +4178,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents33.jpg);
+    background-image: url(/images/contents/common/img_contents33.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -4124,7 +4190,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents34.jpg);
+    background-image: url(/images/contents/common/img_contents34.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -4136,7 +4202,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents35.jpg);
+    background-image: url(/images/contents/common/img_contents35.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -4148,7 +4214,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents36.jpg);
+    background-image: url(/images/contents/common/img_contents36.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -4160,7 +4226,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents37.jpg);
+    background-image: url(/images/contents/common/img_contents37.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -4172,7 +4238,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents38.jpg);
+    background-image: url(/images/contents/common/img_contents38.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -4184,7 +4250,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents39.jpg);
+    background-image: url(/images/contents/common/img_contents39.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -4196,7 +4262,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 172px;
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/img_contents40.jpg);
+    background-image: url(/images/contents/common/img_contents40.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-background-size: 100% 100%;
@@ -4296,7 +4362,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type01 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type01.png);
+    background-image: url(/images/contents/common/icon_type01.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4305,7 +4371,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type02 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type02.png);
+    background-image: url(/images/contents/common/icon_type02.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4314,7 +4380,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type02_2 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type02_2.png);
+    background-image: url(/images/contents/common/icon_type02_2.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4323,7 +4389,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type02_3 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type02_3.png);
+    background-image: url(/images/contents/common/icon_type02_3.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4332,7 +4398,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type02_4 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type02_4.png);
+    background-image: url(/images/contents/common/icon_type02_4.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4341,7 +4407,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type02_5 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type02_5.png);
+    background-image: url(/images/contents/common/icon_type02_5.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4350,7 +4416,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type03 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type03.png);
+    background-image: url(/images/contents/common/icon_type03.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4359,7 +4425,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type04 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type04.png);
+    background-image: url(/images/contents/common/icon_type04.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4368,7 +4434,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type04_2 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type04_2.png);
+    background-image: url(/images/contents/common/icon_type04_2.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4377,7 +4443,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type05 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type05.png);
+    background-image: url(/images/contents/common/icon_type05.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4386,7 +4452,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type06 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type06.png);
+    background-image: url(/images/contents/common/icon_type06.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4395,7 +4461,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type06_2 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type06_2.png);
+    background-image: url(/images/contents/common/icon_type06_2.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4404,7 +4470,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type07 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type07.png);
+    background-image: url(/images/contents/common/icon_type07.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4413,7 +4479,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type08 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type08.png);
+    background-image: url(/images/contents/common/icon_type08.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4422,7 +4488,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type09 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type09.png);
+    background-image: url(/images/contents/common/icon_type09.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4431,7 +4497,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type10 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type10.png);
+    background-image: url(/images/contents/common/icon_type10.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4440,7 +4506,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type11 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type11.png);
+    background-image: url(/images/contents/common/icon_type11.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4449,7 +4515,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type12 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type12.png);
+    background-image: url(/images/contents/common/icon_type12.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4458,7 +4524,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type12_2 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type12_2.png);
+    background-image: url(/images/contents/common/icon_type12_2.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4467,7 +4533,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type12_3 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type12_3.png);
+    background-image: url(/images/contents/common/icon_type12_3.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4476,7 +4542,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type12_4 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type12_4.png);
+    background-image: url(/images/contents/common/icon_type12_4.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4485,7 +4551,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type12_5 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type12_5.png);
+    background-image: url(/images/contents/common/icon_type12_5.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4494,7 +4560,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type13 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type13.png);
+    background-image: url(/images/contents/common/icon_type13.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4503,7 +4569,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type14 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type14.png);
+    background-image: url(/images/contents/common/icon_type14.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4512,7 +4578,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type14_2 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type14_2.png);
+    background-image: url(/images/contents/common/icon_type14_2.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4521,7 +4587,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type14_3 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type14_3.png);
+    background-image: url(/images/contents/common/icon_type14_3.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4530,7 +4596,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type15 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type15.png);
+    background-image: url(/images/contents/common/icon_type15.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4539,7 +4605,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type16 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type16.png);
+    background-image: url(/images/contents/common/icon_type16.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4548,7 +4614,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type16_2 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type16_2.png);
+    background-image: url(/images/contents/common/icon_type16_2.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4557,7 +4623,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type16_3 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type16_3.png);
+    background-image: url(/images/contents/common/icon_type16_3.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4566,7 +4632,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type16_4 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type16_4.png);
+    background-image: url(/images/contents/common/icon_type16_4.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4575,7 +4641,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type16_5 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type16_5.png);
+    background-image: url(/images/contents/common/icon_type16_5.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4584,7 +4650,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type16_6 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type16_6.png);
+    background-image: url(/images/contents/common/icon_type16_6.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4593,7 +4659,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type16_7 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type16_7.png);
+    background-image: url(/images/contents/common/icon_type16_7.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4602,7 +4668,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type17 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type17.png);
+    background-image: url(/images/contents/common/icon_type17.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4611,7 +4677,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type18 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type18.png);
+    background-image: url(/images/contents/common/icon_type18.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4620,7 +4686,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type19 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type19.png);
+    background-image: url(/images/contents/common/icon_type19.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4629,7 +4695,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type20 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type20.png);
+    background-image: url(/images/contents/common/icon_type20.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4638,7 +4704,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type21 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type21.png);
+    background-image: url(/images/contents/common/icon_type21.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4647,7 +4713,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type22 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type22.png);
+    background-image: url(/images/contents/common/icon_type22.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4656,7 +4722,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type23 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type23.png);
+    background-image: url(/images/contents/common/icon_type23.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4665,7 +4731,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type24 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type24.png);
+    background-image: url(/images/contents/common/icon_type24.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4674,7 +4740,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type25 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type25.png);
+    background-image: url(/images/contents/common/icon_type25.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4683,7 +4749,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type26 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type26.png);
+    background-image: url(/images/contents/common/icon_type26.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4692,7 +4758,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type27 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type27.png);
+    background-image: url(/images/contents/common/icon_type27.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4701,7 +4767,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type28 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type28.png);
+    background-image: url(/images/contents/common/icon_type28.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4710,7 +4776,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type29 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type29.png);
+    background-image: url(/images/contents/common/icon_type29.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4719,7 +4785,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type30 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type30.png);
+    background-image: url(/images/contents/common/icon_type30.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4728,7 +4794,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type31 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type31.png);
+    background-image: url(/images/contents/common/icon_type31.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4737,7 +4803,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type32 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type32.png);
+    background-image: url(/images/contents/common/icon_type32.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4746,7 +4812,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type33 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type33.png);
+    background-image: url(/images/contents/common/icon_type33.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4755,7 +4821,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type34 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type34.png);
+    background-image: url(/images/contents/common/icon_type34.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4764,7 +4830,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type35 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type35.png);
+    background-image: url(/images/contents/common/icon_type35.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4773,7 +4839,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type36 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type36.png);
+    background-image: url(/images/contents/common/icon_type36.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4782,7 +4848,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type37 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type37.png);
+    background-image: url(/images/contents/common/icon_type37.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4791,7 +4857,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type38 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type38.png);
+    background-image: url(/images/contents/common/icon_type38.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4800,7 +4866,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type39 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type39.png);
+    background-image: url(/images/contents/common/icon_type39.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -4809,7 +4875,7 @@ button.swiper-pagination-bullet {
 
 .goods_content_info .detail_middle .recommend_list li .icon_image.icon_type40 {
     background-color: transparent;
-    background-image: url(#${imgPath}contents/common/icon_type40.png);
+    background-image: url(/images/contents/common/icon_type40.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -webkit-background-size: 80% 80%;
@@ -5108,6 +5174,8 @@ button.swiper-pagination-bullet {
 }
 
 .wanted.list ul > li {
+    display: table;
+    width: 100%;
     border-bottom: 1px solid #eaeaea;
     min-height: 87px;
 }
@@ -5117,7 +5185,7 @@ button.swiper-pagination-bullet {
 }
 
 .wanted.list ul > li > a {
-    display: block;
+    display: table-cell;
     padding: 15px 12px;
 }
 
@@ -5232,7 +5300,7 @@ button.swiper-pagination-bullet {
     height: 550px;
     margin: 0 auto;
     text-align: center;
-    background-position: 50% 0;
+    background-position: 100% 100%;
     -webkit-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
@@ -5245,7 +5313,7 @@ button.swiper-pagination-bullet {
 }
 
 .brand .visual .tit {
-    padding-top: 41px;
+    padding-top: 63px;
     font-size: 20px;
     font-family: "NanumBarunGothic", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
 }
@@ -5263,12 +5331,11 @@ button.swiper-pagination-bullet {
 
 .brand .visual a.btn-shortcuts {
     font-size: 15px;
+    color: #fff;
     padding: 14px 24px 13px;
-    border-width: 1px;
-    border-style: solid;
     position: absolute;
     left: 50%;
-    bottom: 60px;
+    bottom: 40px;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     white-space: nowrap;
@@ -5287,25 +5354,46 @@ button.swiper-pagination-bullet {
     border-right-width: 2px;
     border-top-style: solid;
     border-right-style: solid;
+    border-top-color: #fff;
+    border-right-color: #fff;
     -webkit-transform: rotateZ(45deg);
     transform: rotateZ(45deg);
 }
 
+@media only screen and (orientation: landscape) {
+    .brand .visual {
+        height: 350px;
+    }
+
+    .brand .visual .visual-wrapper {
+        width: 50%;
+        position: relative;
+        margin-left: 12px;
+    }
+}
+
+.brand.good-base .point {
+    color: #75bd1f;
+}
+
 .brand.good-base .visual {
-    background-image: url("/images/sub/brand/bg_goodbase.jpg");
+    background-image: url("/images/sub/brand/bg_goodbase.png");
+    background-color: #eceee9;
 }
 
 .brand.good-base .visual .tit {
     font-family: "NanumBarunGothicBold", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", Dotum, AppleGothic, sans-serif;
+    color: #75bd1f;
+    background-color: transparent;
+    background-image: url(/images/sub/brand/logo_goodbase.png);
+    background-repeat: no-repeat;
+    background-position: 50% 20px;
+    -webkit-background-size: 38px 26px;
+    background-size: 38px 26px;
 }
 
 .brand.good-base .visual a.btn-shortcuts {
-    border-color: #333;
-}
-
-.brand.good-base .visual a.btn-shortcuts span:after {
-    border-top-color: #333;
-    border-bottom-color: #333;
+    background-color: #75bd1f;
 }
 
 .brand.good-base article.description:nth-of-type(1):after {
@@ -5320,6 +5408,15 @@ button.swiper-pagination-bullet {
     background-image: url("/images/sub//brand/brand_goodbase_img_03.jpg");
 }
 
+.brand.good-base article.description h3 u {
+    color: #75bd1f;
+    border-color: #75bd1f;
+}
+
+.brand.good-base .proposition .list-item li:before {
+    background-color: #75bd1f;
+}
+
 .brand.donginbi .visual {
     background-image: url("/images/sub/brand/bg_donginbi.jpg");
     color: #fff;
@@ -5331,11 +5428,6 @@ button.swiper-pagination-bullet {
 
 .brand.donginbi .visual a.btn-shortcuts {
     border-color: #fff;
-}
-
-.brand.donginbi .visual a.btn-shortcuts span:after {
-    border-top-color: #fff;
-    border-bottom-color: #fff;
 }
 
 .brand.donginbi article.description:nth-of-type(1):after {
@@ -5378,7 +5470,6 @@ button.swiper-pagination-bullet {
 }
 
 .brand article.description h3 u {
-    color: #d71921;
     text-decoration: none;
     border-bottom: 1px solid #d71921;
 }
@@ -5483,7 +5574,6 @@ button.swiper-pagination-bullet {
 
 .brand .proposition .list-item > h4 {
     font-size: 12px;
-    color: #d71921;
     margin-bottom: 8px;
 }
 

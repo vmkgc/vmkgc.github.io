@@ -167,9 +167,9 @@
 
 
 <div id="wrap">
-	
+
 	<div class="category-list">
-		
+
 		<ul class="depth1">
 			<li>
 				<h2 class="toggle arrow">홍삼뿌리
@@ -280,8 +280,9 @@ ui.common.toggleAccordian('.depth1 > li > h2 button.item-toggle', '.depth2', 'cl
 //강제 링크 추가
 document.addEventListener('DOMContentLoaded', function(){
 	document.querySelectorAll('.depth2 li > a').forEach(function(el, i){
-		console.log(el.href);
-		el.href = '/html/category/categoryList_type01.html';
+        if ( el.href == '#' ) {
+            el.href = '/html/category/categoryList_type01.html';
+        }
 	});
 });
 </script>
