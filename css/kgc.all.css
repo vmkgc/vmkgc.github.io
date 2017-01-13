@@ -1214,7 +1214,7 @@ p.warn:before {
     right: auto;
     bottom: auto;
     z-index: 50;
-    background-color: #fff;
+    background-color: #fbfbfb;
     -webkit-transition: left 300ms ease-in-out;
     transition: left 300ms ease-in-out;
 }
@@ -1365,6 +1365,10 @@ p.warn:before {
     border-top-color: transparent;
 }
 
+#navi .navi-list > li .navi-list-sub > li:last-of-type {
+    border-bottom: 1px solid #d0d0d0;
+}
+
 #navi .navi-list > li .navi-list-sub li {
     position: relative;
 }
@@ -1401,11 +1405,6 @@ p.warn:before {
     display: block;
     padding: 14px 12px 12px;
     border-top: 1px solid #d0d0d0;
-    background-color: #fbfbfb;
-}
-
-#navi .navi-list > li .navi-list-sub li:last-of-type {
-    border-bottom: 1px solid #d0d0d0;
 }
 
 #navi .navi-list > li .navi-list-sub .hasList .navi-list-sub-02 {
@@ -1418,6 +1417,7 @@ p.warn:before {
     color: #777;
     padding: 15px 22px 13px;
     border-top-color: #ededed;
+    background-color: #fff;
 }
 
 #navi .navi-list > li.active > a {
@@ -2642,6 +2642,34 @@ button.swiper-pagination-bullet {
 
 .product .hash-tag-list li:first-child {
     margin-left: 0;
+}
+
+.category-list.type02:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.category-list.type02 .product {
+    width: 50%;
+    float: left;
+}
+
+.category-list.type02 .product a.product-info {
+    height: 225px;
+}
+
+.category-list.type02 .product a.product-info .thumb {
+    position: static;
+    margin: 0 auto;
+}
+
+.category-list.type02 .product a.product-info .content {
+    margin-left: 0;
+}
+
+.category-list.type02 .product a.product-info .content .price {
+    position: static;
 }
 
 /* 로그인 */
