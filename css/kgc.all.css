@@ -2666,6 +2666,8 @@ button.swiper-pagination-bullet {
 
 .category-list.type02 .product a.product-info .content {
     margin-left: 0;
+    height: auto;
+    text-align: center;
 }
 
 .category-list.type02 .product a.product-info .content .price {
