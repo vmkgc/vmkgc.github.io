@@ -1033,7 +1033,6 @@ p.warn:before {
 .search.active {
     display: block;
     max-height: 100%;
-    overflow-y: auto;
 }
 
 .search.result {
@@ -1096,6 +1095,9 @@ p.warn:before {
 .search .popular-list {
     padding: 12px;
     background-color: #f8f8f8;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-y: auto;
 }
 
 .search .popular-list a,
