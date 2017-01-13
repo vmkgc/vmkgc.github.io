@@ -2397,7 +2397,7 @@ button.swiper-pagination-bullet {
 }
 
 #main .event .latest ul li .latest-content {
-    max-width: 68%;
+    max-width: 67%;
     display: inherit;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
