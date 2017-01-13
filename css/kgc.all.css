@@ -1542,7 +1542,6 @@ button.to-top {
 
 .category-list .depth1 > li {
     border-bottom: 1px solid #d0d0d0;
-    background: #fbfbfb;
 }
 
 .category-list .depth1 > li > h2 {
@@ -2823,8 +2822,8 @@ button.swiper-pagination-bullet {
     background-image: url(/images/ico/ico_grade_green.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    -webkit-background-size: 70px 70px;
-    background-size: 70px 70px;
+    -webkit-background-size: 56px 56px;
+    background-size: 56px 56px;
 }
 
 .point-status .status.green .grade-color {
@@ -2836,8 +2835,8 @@ button.swiper-pagination-bullet {
     background-image: url(/images/ico/ico_grade_blue.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    -webkit-background-size: 70px 70px;
-    background-size: 70px 70px;
+    -webkit-background-size: 56px 56px;
+    background-size: 56px 56px;
 }
 
 .point-status .status.blue .grade-color {
@@ -2849,8 +2848,8 @@ button.swiper-pagination-bullet {
     background-image: url(/images/ico/ico_grade_gold.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    -webkit-background-size: 70px 70px;
-    background-size: 70px 70px;
+    -webkit-background-size: 56px 56px;
+    background-size: 56px 56px;
 }
 
 .point-status .status.gold .grade-color {
@@ -2862,8 +2861,8 @@ button.swiper-pagination-bullet {
     background-image: url(/images/ico/ico_grade_orange.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    -webkit-background-size: 70px 70px;
-    background-size: 70px 70px;
+    -webkit-background-size: 56px 56px;
+    background-size: 56px 56px;
 }
 
 .point-status .status.orange .grade-color {
@@ -2875,8 +2874,8 @@ button.swiper-pagination-bullet {
     background-image: url(/images/ico/ico_grade_royalgold.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    -webkit-background-size: 70px 70px;
-    background-size: 70px 70px;
+    -webkit-background-size: 56px 56px;
+    background-size: 56px 56px;
 }
 
 .point-status .status.royalgold .grade-color {
@@ -2894,13 +2893,15 @@ button.swiper-pagination-bullet {
     width: 37.5%;
     background-color: #383838;
     text-align: center;
+    vertical-align: top;
+    padding-top: 30px;
 }
 
 .point-status .status .grade .grade-icon {
     display: block;
-    width: 70px;
-    height: 70px;
-    margin: 0 auto;
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 5px;
 }
 
 .point-status .status .grade .btn-grade-guide {
