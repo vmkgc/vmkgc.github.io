@@ -5592,10 +5592,11 @@ button.swiper-pagination-bullet {
     display: block;
     width: 100%;
     height: 100%;
-  /* Chrome10-25,Safari5.1-6 */
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(16%, #efefef), color-stop(64%, #ffffff), color-stop(87%, #c2c5c8), color-stop(94%, #c2c5c8));
-    background-image: linear-gradient(to bottom, #efefef 16%, #ffffff 64%, #c2c5c8 87%, #c2c5c8 94%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background-image: url(/images/sub/brand/bg_ginipet_gradient.jpg);
+    -webkit-background-size: 1px 100%;
+    background-size: 1px 100%;
+    background-position: 0 0;
+    background-repeat: repeat-x;
     position: absolute;
     left: 0;
     top: 0;
