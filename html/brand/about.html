@@ -191,9 +191,9 @@
 
 		<div class="tab-contents">
 			<div class="swiper-container scrolling">
-				<div class="fixed-img">
+				<!-- <div class="fixed-img">
 					<img src="../../images/sub/brand/fixed_img.jpg" alt="">
-				</div>
+				</div> -->
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<img src="../../images/sub/brand/about_content.jpg" alt="">
@@ -231,33 +231,33 @@
 
 <script>
 //scrolling content height
-(function(){
-	$(function(){
-		var footer = $('#footer').height(),
-			header = $('#header').height(),
-			floating = $('.floating').height(),
-			height = window.innerHeight - (footer + header + floating);
-			console.log(height);
-		$('.tab-contents').css({
-			height: height,
-			overflow: 'hidden'
-		});
-		$('.scrolling .swiper-slide').css({
-			paddingTop: height
-		});
-		ui.util.imagePreloader(['../../images/sub/brand/about_content.jpg'], function(){
-			ui.swiper.init('.swiper-container', {
-				height: 300,
-				mousewheelControl: false,
-				direction: 'vertical',
-				freeMode: true,
-				loop: false,
-				slidesPerView:  'auto'
-			});
-			// $('.swiper-container').height( height );
-		});
-	});
-})();
+// (function(){
+// 	$(function(){
+// 		var footer = $('#footer').height(),
+// 			header = $('#header').height(),
+// 			floating = $('.floating').height(),
+// 			height = window.innerHeight - (footer + header + floating);
+// 			console.log(height);
+// 		$('.tab-contents').css({
+// 			height: height,
+// 			overflow: 'hidden'
+// 		});
+// 		$('.scrolling .swiper-slide').css({
+// 			paddingTop: height
+// 		});
+// 		ui.util.imagePreloader(['../../images/sub/brand/about_content.jpg'], function(){
+// 			ui.swiper.init('.swiper-container', {
+// 				height: 300,
+// 				mousewheelControl: false,
+// 				direction: 'vertical',
+// 				freeMode: true,
+// 				loop: false,
+// 				slidesPerView:  'auto'
+// 			});
+// 			// $('.swiper-container').height( height );
+// 		});
+// 	});
+// })();
 </script>
 
 	

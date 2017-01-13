@@ -206,9 +206,19 @@
 	</div>
 	<script>
 		$('.qa_list a').on('click', function(){
-			$('.qa_list li').removeClass('active');
-			$('.qa_cont').not($(this).next('.qa_cont')).slideUp();
-			$(this).next('.qa_cont').slideDown().parent().addClass('active');
+			var parent = $(this).parent();
+			if ( parent.hasClass('active') ) {
+				$(this).next().stop().slideUp(300, function(){
+					parent.removeClass('active');
+				});
+			} else {
+				parent.addClass('active');
+				$(this).next().stop().slideDown(300, function(){
+				});
+				parent.siblings('li').find('.qa_cont').stop().slideUp(300, function(){
+					$(this).parent().removeClass('active');
+				})
+			}
 		});
 	</script>
 </div>
