@@ -2366,7 +2366,6 @@ button.swiper-pagination-bullet {
     display: flex;
     -webkit-box-pack: start;
     justify-content: flex-start;
-    flex-wrap: wrap;
     padding: 10px 6px;
     position: relative;
 }
@@ -2560,6 +2559,19 @@ button.swiper-pagination-bullet {
     display: block;
     width: 108px;
     margin: 0 auto;
+}
+
+@media screen and (orientation: landscape) {
+    #main .kgc-product .list {
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        padding: 0 12px 21px;
+    }
+
+    #main .kgc-product .list .item {
+        width: 24.5%;
+        margin: 0;
+    }
 }
 
 /**************************************************************************************
