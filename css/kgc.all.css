@@ -3023,10 +3023,10 @@ button.swiper-pagination-bullet {
     background-image: url("/images/common/guide_grade_royalgold.png");
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    width: 61px;
-    height: 65px;
-    -webkit-background-size: 61px 65px;
-    background-size: 61px 65px;
+    width: 68px;
+    height: 68px;
+    -webkit-background-size: 68px 68px;
+    background-size: 68px 68px;
 }
 
 .grade-list li.gold:before {
@@ -3038,10 +3038,10 @@ button.swiper-pagination-bullet {
     background-image: url("/images/common/guide_grade_gold.png");
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    width: 56px;
-    height: 56px;
-    -webkit-background-size: 56px 56px;
-    background-size: 56px 56px;
+    width: 68px;
+    height: 68px;
+    -webkit-background-size: 68px 68px;
+    background-size: 68px 68px;
 }
 
 .grade-list li.blue:before {
@@ -3053,10 +3053,10 @@ button.swiper-pagination-bullet {
     background-image: url("/images/common/guide_grade_blue.png");
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    width: 56px;
-    height: 56px;
-    -webkit-background-size: 56px 56px;
-    background-size: 56px 56px;
+    width: 68px;
+    height: 68px;
+    -webkit-background-size: 68px 68px;
+    background-size: 68px 68px;
 }
 
 .grade-list li.green:before {
@@ -3068,10 +3068,10 @@ button.swiper-pagination-bullet {
     background-image: url("/images/common/guide_grade_green.png");
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    width: 56px;
-    height: 56px;
-    -webkit-background-size: 56px 56px;
-    background-size: 56px 56px;
+    width: 68px;
+    height: 68px;
+    -webkit-background-size: 68px 68px;
+    background-size: 68px 68px;
 }
 
 .grade-list li.orange:before {
@@ -3083,10 +3083,10 @@ button.swiper-pagination-bullet {
     background-image: url("/images/common/guide_grade_orange.png");
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    width: 56px;
-    height: 56px;
-    -webkit-background-size: 56px 56px;
-    background-size: 56px 56px;
+    width: 68px;
+    height: 68px;
+    -webkit-background-size: 68px 68px;
+    background-size: 68px 68px;
 }
 
 .grade-list li .explain {
